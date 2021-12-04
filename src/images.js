@@ -3,6 +3,7 @@ import img2 from './images/gallery-gabby.jpg'
 import img3 from './images/gallery-jumping.jpg'
 import logo from './images/ToplineTrainRGB.jpg'
 
+
 const images = [img1, img2, img3, logo]
 
 export default images;
