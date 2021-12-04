@@ -1,4 +1,5 @@
-import 
+import images from './images' /*Array of images from images folder*/
+
 
 function Gallery() {
     return (
@@ -18,9 +19,12 @@ function Gallery() {
                 </div>
             </div>
 
-
+            
 
             <div className="gallery">
+            <img src={images[0]} alt="image1" />
+
+
                 <div className="col">
                     <a href="./images/gallery-Laura-with-kids-ribbons.jpg" data-lightbox="gallery"><img alt="" src="./images/gallery-Laura-with-kids-ribbons.jpg" className="img-fluid" /></a>
                     <a href="./images/gallery-braids-w960-o.jpg" data-lightbox="gallery"><img alt="" src="./images/gallery-braids-w960-o.jpg" className="img-fluid" /></a>
