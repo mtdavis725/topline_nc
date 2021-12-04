@@ -1,11 +1,11 @@
-import images from './images' /*Array of images from images folder*/
+import images from '../../images' /*Array of images from images folder*/
 
 
 function Gallery() {
     return (
         <div>
 
-            <div className="container-fluid">
+            <div className="gal">
                 <div className="row mx-auto">
                     <div className="col-12 text-center">
                         <h1 className="page-header py-2 my-2">Photo Gallery</h1>
@@ -19,10 +19,28 @@ function Gallery() {
                 </div>
             </div>
 
+            <div className="gallery-container">
+                <img src={images[0]} alt="image1" />
+                <img src={images[1]} alt="image1" />
+                <img src={images[2]} alt="image1" />
+
+                <img src={images[0]} alt="image1" />
+                <img src={images[1]} alt="image1" />
+                <img src={images[2]} alt="image1" />
+
+                <img src={images[0]} alt="image1" />
+                <img src={images[1]} alt="image1" />
+                <img src={images[2]} alt="image1" />
+
+                <img src={images[0]} alt="image1" />
+                <img src={images[1]} alt="image1" />
+                <img src={images[2]} alt="image1" />
+            </div>
+
             
 
             <div className="gallery">
-            <img src={images[0]} alt="image1" />
+            
 
 
                 <div className="col">

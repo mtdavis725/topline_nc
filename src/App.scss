@@ -1,6 +1,28 @@
-.gallery img {
-  padding: 0.3rem;
-  transition: .4s all linear ;
+////////// VARIABLES //////////
+$white : #fff;
+$darkRed : #610303;
+$accentRed : #a10606;
+$primaryDark : #111111;
+$secondaryDark : #333;
+
+///////// GLOBAL ///////// 
+body {
+  background-color: $primaryDark;
+  color: $white;
+}
+
+ ////////// GALLERY ////////// 
+ .gallery-container {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+ }
+
+.gallery-container img {
+  width: 100%;
+  transition: .4s all linear;
   &:hover {
       transform: scale(1.05);
       position: relative;
@@ -8,43 +30,26 @@
   }
 }
 
-///////////////////////////////////////////////////////////////////////
-
-.App {
+/////////// FOOTER /////////// 
+footer { 
+  background-color: $secondaryDark;
+  font-size: .9rem;
+  padding: 1rem;
+  color: $white;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  display: grid;
+  div {
+    padding: .5rem;;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  a {
+      color: $white;
+      font-size: 1.8rem;
   }
-  to {
-    transform: rotate(360deg);
+  .footer-logo {
+    max-width: 10rem; 
+  }
+  .redirect {
+    position: relative;
+    top: -20px;
   }
 }
