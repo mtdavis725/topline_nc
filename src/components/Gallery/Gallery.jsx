@@ -5,7 +5,7 @@ function Gallery() {
     return (
         <div>
 
-            <div className="gal">
+            <div className="container-xl">
                 <div className="row mx-auto">
                     <div className="col-12 text-center">
                         <h1 className="page-header py-2 my-2">Photo Gallery</h1>

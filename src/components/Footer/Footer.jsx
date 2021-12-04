@@ -4,7 +4,8 @@ function Footer() {
     let logo = images[3];
     return (
         <footer>
-            
+            <div class="container-xl">
+            <div class="row align-items-center no-gutters">
                 <div className="col-12 text-center pb-3">
                     <a href="#home" className=" text-center mx-auto redirect">
                         <i className="fa fa-long-arrow-up"></i>
@@ -25,6 +26,8 @@ function Footer() {
                 <div className="col-12 col-sm-3 text-center">
                     <span>&copy; Topline Training 2021</span>
                 </div>
+            </div>
+            </div>
         </footer>
     );
 }

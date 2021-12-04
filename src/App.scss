@@ -21,8 +21,7 @@ body {
 ////////// HEADER ////////// 
 .hero-image {
    background-image: url(./images/cover-index-2.jpg);
-   height: 50vh;
-   width: 100vw;
+   height: 55vh;
    margin: 0;
    background-position: center;
    background-repeat: no-repeat;
@@ -87,22 +86,22 @@ body {
 }
 
 /////////// FOOTER /////////// 
+
 footer { 
   background-color: $secondaryDark;
   font-size: .9rem;
   padding: 1rem;
   color: $white;
   text-align: center;
-  display: grid;
   div {
-    padding: .5rem;;
+    padding: .5rem;
   }
   a {
       color: $white;
       font-size: 1.8rem;
   }
   .footer-logo {
-    max-width: 20%; 
+    max-width: 10rem; 
     border: 2px solid $darkRed;
     border-radius: 8px;
   }
@@ -111,3 +110,21 @@ footer {
     top: -20px;
   }
 }
+/*
+footer { 
+  background-color: $secondaryDark;
+  font-size: .9rem;
+  margin-top: 1rem;
+  a {
+      color: $white;
+      font-size: 1.8rem;
+  }
+  .footer-logo {
+    max-width: 9rem; 
+  }
+  .redirect {
+    position: relative;
+    top: -20px;
+  }
+}
+*/
