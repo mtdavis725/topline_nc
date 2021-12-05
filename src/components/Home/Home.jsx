@@ -13,7 +13,7 @@ function Home() {
             </div>
         </div>
 
-        <hr className="bg-light w-75">
+        <hr className="bg-light w-75" />
 
         <div className="container-fluid text-center padding">
             <div className="row mx-auto">
@@ -23,7 +23,7 @@ function Home() {
                         Training in August of 2008. It has been a lifelong dream of hers to better understand the equine
                         mind, and to create a community for those who share her passion. </p>
                 </div>
-                <hr className="bg-light w-75">
+                <hr className="bg-light w-75" />
             </div>
         </div>
 
@@ -36,7 +36,7 @@ function Home() {
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 
                     <div className="card card-index h-100 border p-1">
-                        <img className="card-img-top" src="images/laura-index-square.jpg">
+                        <img className="card-img-top" src="images/laura-index-square.jpg" alt="About card"/>
                         <div className="card-body text-center">
                             <h3 className="card-title">About Us</h3>
                             <p className="card-text">Laura Rose Heymann is a cornerstone of the local equine community
@@ -52,7 +52,7 @@ function Home() {
 
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div className="card card-index h-100 border p-1">
-                        <img className="card-img-top" src="images/square-outdoor-jumping.jpg">
+                        <img className="card-img-top" src="images/square-outdoor-jumping.jpg" alt="Lessons card" />
                         <div className="card-body text-center">
                             <h3 className="card-title">Lessons</h3>
                             <p className="card-text">We offer Hunter-Jumper and Dressage lessons to both children and
@@ -68,7 +68,7 @@ function Home() {
 
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div className="card card-index border p-1 h-100">
-                        <img className="card-img-top " src="images/square-stall.jpg">
+                        <img className="card-img-top " src="images/square-stall.jpg" alt="Boarding card" />
                         <div className="card-body text-center">
                             <h3 className="card-title text-center">Boarding</h3>
                             <p className="card-text">Full stall boarding is offered at Green Level Equestrian. Availability
