@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Slab&display=swap');
+@import './variables';
+@import './footer';
+@import './header';
+@import './cards';
+@import './gallery';
+
+///////// GLOBAL /////////
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: $darkRed;
+  color: $white;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+section {
+  padding: 1rem 0 2rem 0;
+}
+
+.text-link {
+  color: $darkRed;
+}
+
+.padding {
+  padding-bottom: 1.5rem;
+}
+
+
+
+.lessons {
+  text-shadow: 2px 2px 2px black;
+}
+
+
+
+////////// Bootstrap medium column break (tablet) //////////
+@media (max-width: 768px) {
+  
+}

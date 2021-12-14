@@ -1,0 +1,72 @@
+////////// CARDS ////////// 
+.card  {
+    background-color: $primaryDark;
+    border: none;
+    margin: 0.5rem;
+    .card-img-top {
+      border-radius: 0;
+    }
+    .card-body {
+      margin-top: -2rem;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      background-color: $darkRed!important;
+    }
+    .card-text {
+      margin-top: 1rem;
+    }
+    .card-footer {
+      border: none;
+    }
+    
+  }
+  
+  .card-img-overlay .card-overlay-title {
+    width: 75%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+  }
+  
+  .card-img-overlay:hover .card-overlay-title {
+    color: transparent;
+    text-shadow: none;
+    transition: h1 300ms linear;
+    visibility: hidden;
+  }
+  
+  .card-img-overlay {
+    color: transparent;
+    background: rgba(0,0,0,0.25);
+    border-radius: 0;
+  }
+    
+  .card-img-overlay a {
+    color: transparent;
+    background: transparent;
+    border: transparent;
+  }
+    
+  .card-img-overlay:hover {
+    color: white;
+    background: rgba(0, 0, 0, .8);
+    transition: all 500ms ease;
+  }
+    
+  .card-img-overlay:hover a {
+    color: white;
+    background: var(--accent-2);
+    transition: all 400ms ease;
+    border: 1px solid white;
+  }
+  
+  .hide {
+    visibility: hidden;
+  }
+  
+  

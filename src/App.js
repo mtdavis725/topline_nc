@@ -1,5 +1,5 @@
 import React from 'react';
-/* import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'; */
+import { Routes, Route} from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
@@ -9,18 +9,25 @@ import Boarding from './components/Boarding/Boarding';
 import Gallery from './components/Gallery/Gallery';
 import Contact from './components/Contact/Contact';
 
-import './App.scss';
+import './styles/App.scss';
+//import './TEST.css';
 
 function App() {
   return (
     <div>
       <Header />
-      <Home />
-      <About />
-      <Lessons />
-      <Boarding />
-      <Gallery />
-      <Contact />
+     
+      <Routes>
+        {/* If the current URL is /about, this route is rendered
+            while the rest are ignored */}
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/lessons" element={<Lessons/>} />
+        <Route path="/boarding" element={<Boarding/>} />
+        <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/contact" element={<Contact />} />    
+      </Routes>
+
       <Footer />
     </div>
     

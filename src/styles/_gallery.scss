@@ -1,0 +1,19 @@
+ ////////// GALLERY ////////// 
+ .gallery-container {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+   }
+  
+  .gallery-container img {
+    width: 100%;
+    transition: .4s all linear;
+    &:hover {
+        transform: scale(1.05);
+        position: relative;
+        z-index: 10;
+    }
+  }
+  

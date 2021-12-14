@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function About() {
     return (
     <section>
@@ -11,7 +13,7 @@ function About() {
             </div>
         </div>
 
-        <hr className="bg-light w-75" />
+        <hr className="bg-light w-75 mx-auto" />
 
 
         <div className="container-fluid padding">
@@ -82,7 +84,7 @@ function About() {
             <div className="row mx-auto">
                 <div className="col-12">
                     <h1 className="text-center page-header">Training Philosophy</h1>
-                    <hr className="bg-light w-75" />
+                    <hr className="bg-light w-75 mx-auto" />
                     <p>Laura has a unique approach which concentrates on the partnership between horse and rider. Her
                         practice allows the horse to become a more willing participant to help achieve the rider's
                         goals.
@@ -118,7 +120,7 @@ function About() {
                         painful.
                     </p>
                     <p>
-                        Please see the <a href="./lessons.html" className="link">Lessons</a> page for more details!
+                        Please see the <Link to="../lessons" class="text-link">Lessons</Link> page for more details!
                     </p>
                 </div>
             </div>

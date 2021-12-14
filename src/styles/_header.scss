@@ -1,0 +1,101 @@
+////////// HEADER //////////
+.hero-image {
+  background-image: url(../images/cover-index-2.jpg);
+  height: 55vh;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-logo {
+  max-height: 40vh;
+  width: auto;
+  max-width: 90vw;
+  border: 4px solid $darkRed;
+  border-radius: 15px;
+  margin-bottom: .5rem;
+}
+
+////////// NAVIGATION ////////// 
+.nav-item .active {
+    color: $white;
+    text-decoration: underline $darkRed;
+}
+
+a .social-link {
+    color: $white;
+    font-size: 2.6rem;
+    margin: .2rem;
+}
+//Toggle social link OUTSIDE nav-toggler HIDDEN
+.mobile-hidden {
+    display: none;
+}
+//Toggle social link OUTSIDE nav-toggler VISIBLE
+.mobile-visible {
+    display: block;
+}
+  
+.nav-link {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "Roboto Slab";
+    font-variant: small-caps;
+}
+
+.navbar-toggler {
+    background-color: black!important;
+    border: 1.5px solid $white!important;
+    color: $white;
+    opacity: .95;
+}
+
+//// Tablet screen size ////// 
+@media (max-width: 736px) {
+    .header-logo {
+        margin-bottom: 0.25rem;
+    }
+    
+}
+
+////// Bootstrap sm width //////
+@media (max-width: 576px) { 
+    .hero-image {
+        height: 45vh;
+    }
+
+    .header-logo {
+        max-height: 35vh;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar {
+        justify-content: center !important;
+    }
+
+    .navbar-toggler {
+        margin-left: 0.5rem;
+    }
+
+    //Toggle social link OUTSIDE nav-toggler VISIBLE
+    .mobile-hidden {
+        display: block;
+    }
+    //Toggle social link INSIDE nav-toggler HIDDEN
+    .mobile-visible {
+        display: none;
+    }
+
+}
+

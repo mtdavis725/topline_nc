@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #090909;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: max(1.1rem, 1.10vw);
+     scroll-behavior: smooth;
+  }
+  
+  main {
+    background-color: #090909;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .page-header {
+    font-size: clamp(1.85rem, 4.5vw, 2.6rem); 
+  }
+  
+  .content-header {
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+  }
+  
+  .padding {
+    padding-bottom: 1.5rem;
+  }
+    
+  .blockquote {
+    font-family: Century Gothic, sans-serif;
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+  }
+  
+  .blockquote .fa-quote-left, .blockquote .fa-quote-right {
+    font-size: 1.4rem;
+    margin: .25rem;
+  }
+  
+  .link {
+    color:white; 
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  
+  .link:hover {
+    color: darkred;
+    font-weight: 700;
+  }
+  
+  /*------HEADER-------*/
+  .header-content {
+    align-self: center;
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+    width: 100%;
+    background-image: url(./images/cover-index-2.jpg);
+    background-size: 100% 100%;
+  }
+  
+  .logo-img {
+    border: 3px solid darkred;
+    border-radius: 20px;
+    height: auto;
+    width: 45%;
+  }
+  
+  .header-container {
+    border-bottom: 6px double #f4f4f4;
+  }
+  
+  /*----------NAVBAR------------*/
+  .nav-item .active {
+    font-weight: 700;
+    color: white;
+    text-decoration: underline darkred;
+  }
+  
+  .nav-link {
+    color: #f4f4f4;
+    font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+    font-variant: small-caps;
+    letter-spacing: 1.5px; 
+    
+  }
+  
+  a.nav-link{
+    text-shadow: 2px 2px 4px black;
+  }
+  
+  .nav-link:hover {
+    color: white;
+    font-weight: 700;
+    transition-delay: 75ms;
+  }
+  
+  .navbar-toggler {
+    background-color: black!important;
+    border: 1.5px solid white!important;
+    color: white;
+    padding: 1.1rem 1.4rem;
+    opacity: .95;
+  }
+  
+  /*-------BUTTONS--------*/
+  .btn {
+    background-color: darkred;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .btn:hover {
+    border: 1px solid darkred;
+    color: darkred;
+    transform: scale(1.05);
+    transition: all 100ms linear;
+  }
+  
+  /*---------------CARDS----------------*/
+  .card  {
+    background-color: #222;
+    border: none;
+  }
+  
+  .card-img-overlay .card-overlay-title {
+    width: 75%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+  }
+  
+  .card-img-overlay:hover .card-overlay-title {
+    color: transparent;
+    text-shadow: none;
+    transition: h1 300ms linear;
+    visibility: hidden;
+  }
+  
+  .card-img-overlay {
+    color: transparent;
+    background: rgba(0,0,0,0.25);
+    border-radius: 0;
+  }
+    
+  .card-img-overlay a {
+    color: transparent;
+    background: transparent;
+    border: transparent;
+  }
+    
+  .card-img-overlay:hover {
+    color: white;
+    background: rgba(0, 0, 0, .8);
+    transition: all 500ms ease;
+  }
+    
+  .card-img-overlay:hover a {
+    color: white;
+    background: var(--accent-2);
+    transition: all 400ms ease;
+    border: 1px solid white;
+  }
+  
+  .hide {
+    visibility: hidden;
+  }
+  
+  .card-footer {
+    border: none;
+  }
+  
+  .card-text, .card-text li {
+    font-size: max(1.1rem, 1vw);
+  }
+  
+  .lessons {
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  /*---------CAROUSEL---------*/
+  .carousel-item img {
+    width: 80%;
+  }
+  
+  /*----------FOOTER----------*/
+  footer { 
+    background-color: #161616;
+    font-size: max(1.1rem, .9vw);
+  }
+  
+  
+  footer .social {
+    font-size: 4.2rem;
+    color: #4267B2;
+  }
+  
+  footer .social:hover {
+    transform: scale(1.05);
+    transition: all 75ms linear;
+  }
+  
+  footer a {
+    color: white;
+  }
+  
+  footer .social:hover { 
+    color: white;
+    transition-delay: 75ms;
+  }
+  
+  
+  
+  /*----MEDIA QUERIES----*/
+  @media (max-width: 992px) {
+    .logo-img {
+      width: 65%;
+    }
+  }
+  @media (max-width: 768px) {
+    
+    
+    .blockquote {
+      font-size: 1.6rem;
+    }
+  
+    .logo-img {
+      width: 80%;
+    }
+  
+    
+  }
+  @media (max-width: 576px) {
+     .navbar {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      z-index: 1000; 
+      padding: 0;
+    }
+  
+    .navbar-nav {
+      background-color: black;
+      width: 100vw;
+      height: 50vh;
+      line-height: 2rem;
+      padding: 1.5rem;
+    }
+  
+    .carousel-item img {
+      width: 100%;
+    }
+  
+    .card-img-overlay .hide {
+      visibility: visible;
+    }
+  
+    .logo-img {
+      width: 85%;
+    }
+  
+    
+  
+  }
+  
+  /*----Bootstrap Padding Fix----*/
+  [class*="col-"] {
+    padding: 1rem;
+  }
+  

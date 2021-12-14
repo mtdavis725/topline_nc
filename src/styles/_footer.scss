@@ -1,0 +1,43 @@
+/////////// FOOTER /////////// 
+
+footer { 
+    background-color: $secondaryDark;
+    font-size: 1rem;
+    color: $white;
+    text-align: center;
+    a {
+        color: $white;
+        font-size: 2rem;
+    }
+    .footer-logo {
+      max-width: 10rem; 
+      border: 2px solid $darkRed;
+      border-radius: 8px;
+    }
+    .redirect {
+      position: relative;
+      top: -24px;
+      &:hover {
+        color: $white;
+        border-bottom: 6px double white;
+      }
+    }
+  }
+  /*
+  footer { 
+    background-color: $secondaryDark;
+    font-size: .9rem;
+    margin-top: 1rem;
+    a {
+        color: $white;
+        font-size: 1.8rem;
+    }
+    .footer-logo {
+      max-width: 9rem; 
+    }
+    .redirect {
+      position: relative;
+      top: -20px;
+    }
+  }
+  */

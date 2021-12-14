@@ -4,10 +4,10 @@ function Footer() {
     let logo = images[3];
     return (
         <footer>
-            <div class="container-xl">
+            <div class="container-xl padding">
             <div class="row align-items-center no-gutters">
                 <div className="col-12 text-center pb-3">
-                    <a href="#home" className=" text-center mx-auto redirect">
+                    <a href="#home" className="text-center mx-auto redirect">
                         <i className="fa fa-long-arrow-up"></i>
                     </a>
                 </div>
