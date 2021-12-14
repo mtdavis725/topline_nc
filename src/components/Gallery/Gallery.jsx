@@ -1,5 +1,5 @@
 import images from '../../images' /*Array of images from images folder*/
-
+import { Link } from 'react-router-dom'
 
 function Gallery() {
     return (
@@ -14,27 +14,50 @@ function Gallery() {
                     <hr className="mb-1 bg-light w-75 mx-auto" />
                     <div className="row">
                         <div className="col-12 text-center">
-                            <span>Visit our <a href="https://www.facebook.com/greenlevelequestrian" className="link">Facebook</a> page to see more photos and stay up to date with us!</span>
+                            <span>Visit our <Link to="https://www.facebook.com/greenlevelequestrian" class="text-link">Facebook</Link> page to see more photos and stay up to date with us!</span>
                         </div>
                     </div>
                 </div>
 
-                <div className="gallery-container">
-                    <img src={images[0]} alt="image1" />
-                    <img src={images[1]} alt="image1" />
-                    <img src={images[2]} alt="image1" />
+                <div className="row mx-auto">
+                    
+                    <div className="col-sm-6 col-md-4 col-lg-3 p-0">
+                    <img src={images.gallery[0]} alt="gallery" className="img-fluid p-1 p-1" />
+                    <img src={images.gallery[1]} alt="gallery" className="img-fluid p-1" />
+                    <img src={images.gallery[2]} alt="gallery" className="img-fluid p-1" />
+                    <img src={images.gallery[3]} alt="gallery" className="img-fluid p-1" />
+                    
+                    
+                    </div>
 
-                    <img src={images[0]} alt="image1" />
-                    <img src={images[1]} alt="image1" />
-                    <img src={images[2]} alt="image1" />
+                    <div className="col-sm-6 col-md-4 col-lg-3 p-0">
+                    
+                    <img src={images.gallery[4]} alt="gallery" className="img-fluid p-1" />
+                    <img src={images.gallery[5]} alt="gallery" className="img-fluid p-1" />
+                    <img src={images.gallery[6]} alt="gallery" className="img-fluid p-1" />
+                    <img src={images.gallery[7]} alt="gallery" className="img-fluid p-1" />
+                    
+                    </div>
 
-                    <img src={images[0]} alt="image1" />
-                    <img src={images[1]} alt="image1" />
-                    <img src={images[2]} alt="image1" />
+                    <div className="col-sm-6 col-md-3 col-lg-3 p-0">
+                    
+                    <img src={images.gallery[8]} alt="gallery" className="img-fluid p-1" />
+                    <img src={images.gallery[9]} alt="gallery" className="img-fluid p-1" />
+                    <img src={images.gallery[10]} alt="gallery" className="img-fluid p-1" />
+                    <img src={images.gallery[11]} alt="gallery" className="img-fluid p-1" />
+                    </div>
 
-                    <img src={images[0]} alt="image1" />
-                    <img src={images[1]} alt="image1" />
-                    <img src={images[2]} alt="image1" />
+                    <div className="col-sm-6 col-md-4 col-lg-3 p-0">
+                    
+                    
+                    <img src={images.gallery[12]} alt="gallery" className="img-fluid p-1" />
+                    <img src={images.gallery[13]} alt="gallery" className="img-fluid p-1" />
+                    <img src={images.gallery[14]} alt="gallery" className="img-fluid p-1" />
+                    </div>
+
+                    
+
+                    
                 </div>
 
                 

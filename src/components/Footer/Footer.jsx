@@ -1,7 +1,6 @@
 import images from '../../images'
 
 function Footer() {
-    let logo = images.logo;
     return (
         <footer>
             <div class="container-xl padding">
@@ -12,7 +11,7 @@ function Footer() {
                     </a>
                 </div>
                 <div className="col-12 col-sm-3 text-center">
-                    <img src={logo} alt="Footer logo" className="footer-logo" />
+                    <img src={images.logo} alt="Footer logo" className="footer-logo" />
                 </div>
                 <div className="col-12 col-sm-6 text-center">
                     <span><i className="fa fa-phone"> &nbsp;</i>(919) 444-1767</span>

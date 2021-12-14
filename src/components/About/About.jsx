@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import images from '../../images' /*Array of images from images folder*/
 
 function About() {
     return (
@@ -34,13 +35,13 @@ function About() {
 
                 </div>
                 <div className="col-6 col-md-4 col-lg-3">
-                    <img src="../images/VA.jpg" alt="VA country side" className="img-fluid border rounded" />
+                    <img src={images.about[0]} alt="VA country side" className="img-fluid border rounded" />
 
                 </div>
 
 
                 <div className="col-6 col-md-4 col-lg-3">
-                    <img src="../images/laura-about.jpg" alt="Laura Heymann" className="img-fluid border rounded" />
+                    <img src={images.about[1]} alt="Laura Heymann" className="img-fluid border rounded" />
                 </div>
                 <div className="col-sm-12 col-md-8 col-lg-9 pb-0">
                     <p>
@@ -72,7 +73,7 @@ function About() {
                         ​</p>
                 </div>
                 <div className="col-sm-10 col-md-6 col-lg-5">
-                    <img src="../images/greenlevelequestrian-w750-o.jpg" alt="GLE" className="img-fluid border rounded p-0" />
+                    <img src={images.about[2]} alt="GLE" className="img-fluid border rounded p-0" />
                 </div>
 
             </div>
