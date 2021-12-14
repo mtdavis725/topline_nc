@@ -1,14 +1,17 @@
-import img1 from './images/gallery-Ali_braids.jpg'
-import img2 from './images/gallery-gabby.jpg'
-import img3 from './images/gallery-jumping.jpg'
+import img1 from './images/gallery/gallery-sammi.jpg'
+import img2 from './images/gallery/gallery-gabby.jpg'
+import img3 from './images/gallery/gallery-jumping.jpg'
 import logo from './images/ToplineTrainRGB.jpg'
-import aboutCard from './images/laura-index-square.jpg'
-import lessonsCard from './images/square-outdoor-jumping.jpg'
-import boardingCard from './images/square-stall.jpg'
+import aboutCard from './images/cards/laura-index-square.jpg'
+import lessonsCard from './images/cards/square-outdoor-jumping.jpg'
+import boardingCard from './images/cards/square-stall.jpg'
 
 
 
-const images = [img1, img2, img3, logo, aboutCard, lessonsCard, boardingCard]
+const images = {
+    gallery: [img1, img2, img3],
+    cards: [aboutCard, lessonsCard, boardingCard],
+    logo }
 
 export default images;
 

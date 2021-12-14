@@ -1,7 +1,7 @@
 import images from '../../images'
 
 function Footer() {
-    let logo = images[3];
+    let logo = images.logo;
     return (
         <footer>
             <div class="container-xl padding">

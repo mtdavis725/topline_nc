@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import images from '../../images' /*Array of images from images folder*/
+import images from '../../images' /*Images object from images folder*/
 
 function Home() {
-    let aboutCard = images[4];
-    let lessonsCard = images[5];
-    let boardingCard = images[6];
+    let aboutCard = images.cards[0];
+    let lessonsCard = images.cards[1];
+    let boardingCard = images.cards[2];
     
 
     return (

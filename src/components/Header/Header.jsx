@@ -2,7 +2,7 @@ import images from '../../images'
 import { NavLink } from 'react-router-dom'
 
 function Header() {
-    let logo = images[3];
+    let logo = images.logo;
     return (
         <header className="hero-image padding">
             <div className="hero-content"> 
