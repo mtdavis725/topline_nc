@@ -19,45 +19,34 @@ function Gallery() {
                     </div>
                 </div>
 
-                <div className="row mx-auto">
-                    
-                    <div className="col-sm-6 col-md-4 col-lg-3 p-0">
-                    <img src={images.gallery[0]} alt="gallery" className="img-fluid p-1 p-1" />
-                    <img src={images.gallery[1]} alt="gallery" className="img-fluid p-1" />
-                    <img src={images.gallery[2]} alt="gallery" className="img-fluid p-1" />
-                    <img src={images.gallery[3]} alt="gallery" className="img-fluid p-1" />
-                    
-                    
-                    </div>
+                <div className="container-fluid">
+                    <div className="row mx-auto">
+                        <div className="col">
+                            <img src={images.gallery[0]} alt="gallery" className="img-fluid p-1 p-1" />
+                            <img src={images.gallery[1]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[2]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[3]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[4]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[5]} alt="gallery" className="img-fluid p-1" /> 
+                        </div>
 
-                    <div className="col-sm-6 col-md-4 col-lg-3 p-0">
-                    
-                    <img src={images.gallery[4]} alt="gallery" className="img-fluid p-1" />
-                    <img src={images.gallery[5]} alt="gallery" className="img-fluid p-1" />
-                    <img src={images.gallery[6]} alt="gallery" className="img-fluid p-1" />
-                    <img src={images.gallery[7]} alt="gallery" className="img-fluid p-1" />
-                    
-                    </div>
+                        <div className="col">
+                            <img src={images.gallery[6]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[7]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[8]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[9]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[10]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[11]} alt="gallery" className="img-fluid p-1" />
+                        </div>
 
-                    <div className="col-sm-6 col-md-3 col-lg-3 p-0">
-                    
-                    <img src={images.gallery[8]} alt="gallery" className="img-fluid p-1" />
-                    <img src={images.gallery[9]} alt="gallery" className="img-fluid p-1" />
-                    <img src={images.gallery[10]} alt="gallery" className="img-fluid p-1" />
-                    <img src={images.gallery[11]} alt="gallery" className="img-fluid p-1" />
-                    </div>
-
-                    <div className="col-sm-6 col-md-4 col-lg-3 p-0">
-                    
-                    
-                    <img src={images.gallery[12]} alt="gallery" className="img-fluid p-1" />
-                    <img src={images.gallery[13]} alt="gallery" className="img-fluid p-1" />
-                    <img src={images.gallery[14]} alt="gallery" className="img-fluid p-1" />
-                    </div>
-
-                    
-
-                    
+                        <div className="col">
+                            <img src={images.gallery[12]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[13]} alt="gallery" className="img-fluid p-1" />
+                            <img src={images.gallery[14]} alt="gallery" className="img-fluid p-1" />
+                        
+                        
+                        </div>     
+                    </div>   
                 </div>
 
                 
