@@ -35,7 +35,7 @@ function About() {
 
                 </div>
                 <div className="col-6 col-md-4 col-lg-3">
-                    <img src={images.about[0]} alt="VA country side" className="img-fluid border rounded" />
+                    <img src={images.about[0]} alt="VA countryside" className="img-fluid" />
 
                 </div>
 

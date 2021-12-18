@@ -20,13 +20,16 @@
  
  ////////// Bootstrap small column break //////////
 @media (max-width: 768px) {
-  
+  .gallery-container {
+    padding: .5rem;
+   }
+} 
 } 
 
  ////////// Bootstrap small column break //////////
  @media (max-width: 440px) {
   .gallery-container {
-    padding:.25rem;
+    padding: .25rem;
     grid: auto-flow dense / 1fr 1fr;
    }
 } 
