@@ -1,11 +1,11 @@
  ////////// GALLERY ////////// 
- /*
+
  .gallery-container {
     margin: 0 auto;
     padding: 1rem;
-    width: 90vw;
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
+    grid: auto-flow dense / repeat(3, 33%);
+    gap: 0.4rem;
    }
   
   .gallery-container img {
@@ -17,5 +17,16 @@
         z-index: 10;
     }
   }
-  */
+ 
+ ////////// Bootstrap small column break //////////
+@media (max-width: 768px) {
   
+} 
+
+ ////////// Bootstrap small column break //////////
+ @media (max-width: 440px) {
+  .gallery-container {
+    padding:.25rem;
+    grid: auto-flow dense / 1fr 1fr;
+   }
+} 
