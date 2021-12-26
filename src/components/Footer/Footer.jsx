@@ -1,4 +1,5 @@
 import images from '../../images'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -6,9 +7,10 @@ function Footer() {
             <div class="container-xl padding">
             <div class="row align-items-center no-gutters">
                 <div className="col-12 text-center pb-3">
-                    <a href="#home" className="text-center mx-auto redirect">
+                    <Link to="/" className="text-center mx-auto redirect" >
                         <i className="fa fa-long-arrow-up"></i>
-                    </a>
+                    </Link>
+                   
                 </div>
                 <div className="col-12 col-sm-3 text-center">
                     <img src={images.logo} alt="Footer logo" className="footer-logo" />

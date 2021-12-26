@@ -13,7 +13,7 @@ function Home() {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 text-center">
-                            <h1 className="page-header py-2 my-3">Take your horse to the top!</h1>
+                            <h1 className="header-lg">Take your horse to the top!</h1>
                         </div>
                     </div>
                 </div>
@@ -36,11 +36,11 @@ function Home() {
 
 
             
-                <div className="container-fluid padding">
+                <div className="container-fluid cards-container padding">
                     <div className="row mx-auto justify-content-center">
-                        <div className="col-xs-12 col-sm-6 col-md-5 col-lg-4 mb-2">
+                        <div className="col-xs-12 col-sm-6 col-md-5 col-lg-4">
 
-                            <div className="card h-100">
+                            <div className="card h-100 w-100">
                                 <img className="card-img-top" src={aboutCard} alt="About card"/>
                                 <div className="card-body text-center">
                                     <h3 className="card-title p-1">About Us</h3>
@@ -57,8 +57,8 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className="col-xs-12 col-sm-6 col-md-5 col-lg-4 mb-2">
-                            <div className="card h-100">
+                        <div className="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                            <div className="card h-100 w-100">
                                 <img className="card-img-top" src={lessonsCard} alt="Lessons card" />
                                 <div className="card-body text-center">
                                     <h3 className="card-title p-1">Lessons</h3>
@@ -75,8 +75,8 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className="col-xs-12 col-sm-6 col-md-5 col-lg-4 mb-2">
-                            <div className="card h-100">
+                        <div className="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                            <div className="card h-100 w-100">
                                 <img className="card-img-top " src={boardingCard} alt="Boarding card" />
                                 <div className="card-body text-center">
                                     <h3 className="card-title p-1">Boarding</h3>

@@ -9,18 +9,14 @@ function About() {
         <div className="container-fluid">
             <div className="row mx-auto">
                 <div className="col-12 text-center">
-                    <h1 className="page-header py-2 my-2">Meet the Trainer</h1>
+                    <h1 className="header-lg">Meet the Trainer</h1>
                 </div>
             </div>
         </div>
 
         <hr className="bg-light w-75 mx-auto" />
 
-
-        
-        <div className="about-container padding mt-3">
-            
-                
+        <div className="container-fluid about-container">   
                 <div className="item1">
                     <h2 className="content-header pb-1">Laura Rose Heymann</h2>
                     <p>Laura's devotion to all things horses began at the age of six in Charlottesville, VA, when her mother first enrolled her in riding lessons. From there, Laura became increasingly absorbed in the horseback riding community as a hunter/jumper, eventer, and foxhunter, under the instruction of Page Turner. </p>
@@ -60,44 +56,33 @@ function About() {
 
 
        
-        <div className="container-fluid padding">
-            <div className="row mx-auto padding">
-                <div className="col-12">
-                    <h1 className="text-center page-header">Training Philosophy</h1>
-                    <hr className="bg-light w-75 mx-auto" />
-                    <p>Laura has a unique approach which concentrates on the partnership between horse and rider. Her practice allows the horse to become a more willing participant to help achieve the rider's
-                    goals.</p>
-                    <p>Laura’s training is premised on the fact that no one horse has the same background as any other. From their status within the herd to previous injuries or accidents, each horse enters the riding arena with a different set of experiences. Therefore, using the same set of exercises to train every horse does not produce a completely successful outcome, nor does it make sense.</p>
-                </div>
+        <div className="container-fluid about-container2 padding">
+            <div className="item1">
+                <h1 className="text-center header-lg">Training Philosophy</h1>
+                <hr className="bg-light w-75 mx-auto" />
             </div>
 
+            <div className="item2">
+                <p>Laura has a unique approach which concentrates on the partnership between horse and rider. Her practice allows the horse to become a more willing participant to help achieve the rider's
+                goals.</p>
+                <p>Laura’s training is premised on the fact that no one horse has the same background as any other. From their status within the herd to previous injuries or accidents, each horse enters the riding arena with a different set of experiences. Therefore, using the same set of exercises to train every horse does not produce a completely successful outcome, nor does it make sense.</p>
+            </div> 
 
-
-            <div className="row mx-auto justify-content-center padding">
-                <div className="col-sm-10 text-center">
-
-                    <blockquote className="blockquote"><i className="fa fa-quote-left"> </i> The key to having an
-                        honest, understanding partnership with a horse is to be able to have a rewarding system of
-                        communication. <i className="fa fa-quote-right"></i></blockquote>
-
-                </div>
-
+            <div className="item3">
+                <blockquote className="blockquote">
+                    <i className="fa fa-quote-left p-2"> </i>
+                     The key to having an honest, understanding partnership with a horse is to be able to have a rewarding system of communication.  
+                    <i className="fa fa-quote-right p-2"></i>
+                </blockquote>
+            </div>      
+                
+            <div className="item4">
+                <p>Instead of dominating and directing the horse’s energy, this form of communication promotes a constructive system of feedback between horse and human, encouraging the horse to be an active and engaged participant in learning to understand the rider’s requests. From there, the horse learns that being interactive with people does not have to be physically or psychologically painful.
+                </p>
+                <p>Please see the <Link to="../lessons" class="text-link">Lessons</Link> page for more details!
+                </p>
             </div>
-
             
-            <div className="row mx-auto">
-                <div className="col-12">
-                    <p>Instead of dominating and directing the horse’s energy, this form of communication promotes a
-                        constructive system of feedback between horse and human, encouraging the horse to be an active
-                        and engaged participant in learning to understand the rider’s requests. From there, the horse
-                        learns that being interactive with people does not have to be physically or psychologically
-                        painful.
-                    </p>
-                    <p>
-                        Please see the <Link to="../lessons" class="text-link">Lessons</Link> page for more details!
-                    </p>
-                </div>
-            </div>
         </div>
 
     </main>

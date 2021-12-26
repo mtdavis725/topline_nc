@@ -1,8 +1,26 @@
 ////////// CARDS ////////// 
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  grid-template-areas: 
+    'card1 card2 card3';
+  .item1 {
+    grid-area: card1;
+  }
+  .item2 {
+    grid-area: card2;
+  }
+  .item3 {
+    grid-area: card3;
+  }
+}
+
 .card  {
     background-color: $primaryDark;
     border: none;
-    margin: 0.5rem;
+    margin: 1rem;
     .card-img-top {
       border-radius: 0;
     }
@@ -17,6 +35,7 @@
       margin-top: 1rem;
     }
     .card-footer {
+      margin-top: -2rem;
       border: none;
     }
     
@@ -70,3 +89,16 @@
   }
   
   
+////////// Bootstrap small column break (tablet) //////////
+@media (max-width: 992px) {
+  .card  {
+    background-color: $primaryDark;
+    border: none;
+    margin: 1rem;
+  }
+}
+
+////////// Bootstrap small column break (tablet) //////////
+@media (max-width: 768px) {
+  
+}

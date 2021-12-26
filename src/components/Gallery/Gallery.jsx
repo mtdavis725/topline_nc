@@ -18,7 +18,7 @@ function Gallery() {
                     <hr className="mb-1 bg-light w-75 mx-auto" />
                     <div className="row">
                         <div className="col-12 text-center">
-                            <span>Visit our <Link to="https://www.facebook.com/greenlevelequestrian" class="text-link">Facebook</Link> page to see more photos and stay up to date with us!</span>
+                            <span>Visit our <Link to="https://www.facebook.com/greenlevelequestrian" className="text-link">Facebook</Link> page to see more photos and stay up to date with us!</span>
                         </div>
                     </div>
                 </div>
