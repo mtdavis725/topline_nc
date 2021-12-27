@@ -1,9 +1,11 @@
 ////////// CARDS ////////// 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(200px, 300px));
   grid-template-rows: auto;
-  grid-gap: 1rem;
+  justify-content: center;
+  padding: 0 2rem;
+  grid-gap: 1.5rem;
   grid-template-areas: 
     'card1 card2 card3';
   .item1 {
@@ -20,7 +22,9 @@
 .card  {
     background-color: $primaryDark;
     border: none;
-    margin: 1rem;
+    height: 100%;
+    max-width: 300px;
+    
     .card-img-top {
       border-radius: 0;
     }
@@ -35,7 +39,6 @@
       margin-top: 1rem;
     }
     .card-footer {
-      margin-top: -2rem;
       border: none;
     }
     
@@ -91,14 +94,33 @@
   
 ////////// Bootstrap small column break (tablet) //////////
 @media (max-width: 992px) {
-  .card  {
-    background-color: $primaryDark;
-    border: none;
-    margin: 1rem;
-  }
+  
+
 }
 
 ////////// Bootstrap small column break (tablet) //////////
-@media (max-width: 768px) {
-  
+@media (max-width: 860px) {
+  .cards-container {
+    grid-template-columns: repeat(2, minmax(200px, 300px));
+    grid-template-areas: 
+      'card1 card2' 
+      'card3 card3' ;
+    .item3 {
+      justify-self: center;
+    }
+  }
+
+ 
 }
+
+ ////////// Bootstrap small column break //////////
+ @media (max-width: 680px) {
+   .cards-container {
+    grid-template-columns: minmax(200px, 300px);
+    padding: .5rem;
+    grid-template-areas: 
+      'card1' 
+      'card2' 
+      'card3' ;
+  }
+} 

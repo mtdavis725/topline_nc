@@ -22,8 +22,8 @@ function Home() {
 
                 <div className="container-fluid text-center padding">
                     <div className="row mx-auto">
-                        <div className="col-12 text-center py-2">
-                            <p>Topline Training offers horse riding lessons, training programs, full boarding and much more. We are based out of the lovely Green Level Equestrian boarding facility in Apex, NC!
+                        <div className="col-12 text-center pt-2">
+                            <p>Topline Training offers horse riding lessons, training programs, full boarding and much more. We are based out of the lovely Green Level Equestrian boarding facility in Apex, NC! 
                                 <strong>Laura Rose Heymann</strong>, owner/trainer and on-site barn manager, founded Topline
                                 Training in August of 2008. It has been a lifelong dream of hers to better understand the equine
                                 mind, and to create a community for those who share her passion. </p>
@@ -36,11 +36,8 @@ function Home() {
 
 
             
-                <div className="container-fluid cards-container padding">
-                    <div className="row mx-auto justify-content-center">
-                        <div className="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-
-                            <div className="card h-100 w-100">
+                <div className="cards-container padding">
+                     <div className="card item1">
                                 <img className="card-img-top" src={aboutCard} alt="About card"/>
                                 <div className="card-body text-center">
                                     <h3 className="card-title p-1">About Us</h3>
@@ -54,11 +51,11 @@ function Home() {
                                         </button>
                                     </Link>
                                 </div>
-                            </div>
+                            
                         </div>
 
-                        <div className="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-                            <div className="card h-100 w-100">
+                        
+                            <div className="card item2">
                                 <img className="card-img-top" src={lessonsCard} alt="Lessons card" />
                                 <div className="card-body text-center">
                                     <h3 className="card-title p-1">Lessons</h3>
@@ -72,11 +69,11 @@ function Home() {
                                         </button>
                                     </Link>
                                 </div>
-                            </div>
+                            
                         </div>
 
-                        <div className="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-                            <div className="card h-100 w-100">
+                        
+                            <div className="card item3">
                                 <img className="card-img-top " src={boardingCard} alt="Boarding card" />
                                 <div className="card-body text-center">
                                     <h3 className="card-title p-1">Boarding</h3>
@@ -91,10 +88,10 @@ function Home() {
                                         </button>
                                     </Link>
                                 </div>
-                            </div>
+                            
                         </div>
 
-                    </div>
+                    
                 </div>
             </main>
         </section>

@@ -6,17 +6,18 @@ function About() {
     <section>
         <main className="container-xl">
 
-        <div className="container-fluid">
+        <div className="container-fluid pb-3">
             <div className="row mx-auto">
                 <div className="col-12 text-center">
                     <h1 className="header-lg">Meet the Trainer</h1>
                 </div>
             </div>
+            <hr className="bg-light w-75 mx-auto" />
         </div>
 
-        <hr className="bg-light w-75 mx-auto" />
+        
 
-        <div className="container-fluid about-container">   
+        <div className="container-fluid about-container padding">   
                 <div className="item1">
                     <h2 className="content-header pb-1">Laura Rose Heymann</h2>
                     <p>Laura's devotion to all things horses began at the age of six in Charlottesville, VA, when her mother first enrolled her in riding lessons. From there, Laura became increasingly absorbed in the horseback riding community as a hunter/jumper, eventer, and foxhunter, under the instruction of Page Turner. </p>
@@ -48,7 +49,7 @@ function About() {
                         ​</p>
                 </div>
 
-                <div className="item6">
+                <div className="item5">
                     <img src={images.about[2]} alt="GLE" className="img-fluid" />
                 </div>
 
