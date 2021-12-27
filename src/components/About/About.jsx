@@ -25,7 +25,7 @@ function About() {
                     <p>Natural Horsemanship drastically altered Laura's perception of working with horses and provided her with a new trajectory towards not just riding, but the actual training and teaching of the horse. Thanks to Page and Louis (and Laura's supportive parents :) Laura had the opportunity to participate in dozens of clinics on different horses of various skill levels.</p>
                 </div>
 
-                <div className="item2">
+            <div className="item2">
                     <img src={images.about[0]} alt="VA countryside" className="img-fluid" />
                 </div>
 
@@ -92,3 +92,4 @@ function About() {
 }
 
 export default About;
+
