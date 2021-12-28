@@ -12,10 +12,10 @@ function Gallery() {
                 <div className="container-fluid">
                     <div className="row mx-auto">
                         <div className="col-12 text-center">
-                            <h1 className="page-header py-2 my-2">Photo Gallery</h1>
+                            <h1 className="page-header ">Photo Gallery</h1>
                         </div>
                     </div>
-                    <hr className="mb-1 bg-light w-75 mx-auto" />
+                    <hr className="bg-light w-75 mx-auto" />
                     <div className="row">
                         <div className="col-12 text-center">
                             <span>Visit our <Link to="https://www.facebook.com/greenlevelequestrian" className="text-link">Facebook</Link> page to see more photos and stay up to date with us!</span>

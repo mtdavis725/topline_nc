@@ -4,6 +4,7 @@
 @import './header';
 @import './about';
 @import './cards';
+@import './lessons';
 @import './gallery';
 
 ///////// GLOBAL /////////
@@ -30,8 +31,14 @@ section {
   font-style: italic;
 }
 
+.page-header {
+  font-size: 2.3rem;
+  padding: 1rem 0 0 0;
+}
+
 .header-lg {
   padding: 1rem 0 .5rem 0;
+  font-size: 1.8rem;
 }
 
 .padding {
@@ -54,4 +61,11 @@ section {
 ////////// Bootstrap small column break (tablet) //////////
 @media (max-width: 768px) {
   
+}
+
+////////// Bootstrap small column break (tablet) //////////
+@media (max-width: 440px) {
+  .padding {
+    padding-bottom: 1rem;
+  }
 }

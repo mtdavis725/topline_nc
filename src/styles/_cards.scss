@@ -24,7 +24,6 @@
     border: none;
     height: 100%;
     max-width: 300px;
-    
     .card-img-top {
       border-radius: 0;
     }
@@ -43,16 +42,30 @@
     }
     
   }
+
+  .lesson-card {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+    
+    .card-text {
+      margin: 0;
+    }
+  }
+
+  .card-img-overlay {
+    display: grid;
+    place-items: center;
+  }
   
-  .card-img-overlay .card-overlay-title {
+  .card-overlay-title {
     width: 75%;
     text-align: center;
     color: white;
-    margin: 0 auto;
     position: absolute;
-    top: 40%;
-    left: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
   }
   
   .card-img-overlay:hover .card-overlay-title {

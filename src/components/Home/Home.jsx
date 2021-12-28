@@ -11,14 +11,15 @@ function Home() {
         <section>
             <main className="container-xl ">
                 <div className="container-fluid">
-                    <div className="row">
+                    <div className="row mx-auto">
                         <div className="col-12 text-center">
-                            <h1 className="header-lg">Take your horse to the top!</h1>
+                            <h1 className="page-header">Take your horse to the top!</h1>
                         </div>
                     </div>
+                    <hr className="bg-light w-75 mx-auto" />
                 </div>
 
-                <hr className="bg-light w-75 mx-auto" />
+                
 
                 <div className="container-fluid text-center padding">
                     <div className="row mx-auto">

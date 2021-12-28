@@ -1,0 +1,22 @@
+.lessons-container {
+  display: grid;
+  padding: 0 2rem;
+  grid-gap: 1rem 3rem;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /*grid-template-areas: 
+    'content1 cards'
+    'content1 cards'
+    'actionitem cards'
+    ;
+  .item1 {
+    grid-area: content1;
+  }
+  .item2 {
+    grid-area: cards;
+  }
+  .item3 {
+    grid-area: actionitem;
+  }
+  */
+}

@@ -1,104 +1,80 @@
 import images from '../../images' /*Array of images from images folder*/
+import { Link } from 'react-router-dom'
 
 function Lessons() {
-    return(
+    return (
         <section>
             <main className="container-xl">
                 <div className="container-fluid">
                     <div className="row mx-auto">
                         <div className="col-12 text-center">
-                            <h1 className="page-header py-2 my-2">Training with Topline</h1>
+                            <h1 className="page-header ">Training with Topline</h1>
                         </div>
                     </div>
+                    <hr className="bg-light w-75 mx-auto" />
                 </div>
 
-                <hr className="bg-light w-75 mx-auto" />
-
-            
-                <div className="container-fluid padding">
-                <h2 className="content-header">Lesson Details</h2>
-                    <div className="row mx-auto">
+                <div className="container-fluid lessons-container padding">
                     
-                            
-                            <div className="col-xs-12 col-sm-6 ">
-                                    <p>Laura's standard lessons often revolve around a specific skill, from equitation, to horse
-                                behavior, to a dressage movement, to the overall balance of the horse. From there, Laura
-                                incorporates a number of related exercises, on the ground and under saddle, to help both horse
-                                and rider find a clear understanding of the skill or concept.</p>
-                                <p>If you have your own horse or you are more than welcome to trailer in to our facility in Apex, NC
-                                for a lesson.</p>
-                            </div>
-                            <div className="col-xs-12 col-sm-6">
-                                <p>If you do not have a horse of your own, or you are interested in tuning up your
-                                riding on a different horse, Laura Rose runs a training program as well!</p>
-                                <p>*All lessons are held at Green Level Equestrian, please inquire for any off-site training
-                                requests (rates subject to change).</p>
-                            </div>
-                        
+                    <div className="item1">
+                    <h1 className="header-lg">Lesson Details</h1>
+                        <p>Laura's standard lessons often revolve around a specific skill, from equitation, to horse
+                        behavior, to a dressage movement, to the overall balance of the horse. From there, Laura incorporates a number of related exercises, on the ground and under saddle, to help both horse and rider find a clear understanding of the skill or concept.</p>
+
+                        <p>If you have your own horse or you are more than welcome to trailer in to our facility in Apex, NC for a lesson.</p>
+
+                        <p>If you do not have a horse of your own, or you are interested in tuning up your riding on a different horse, Laura Rose runs a training program as well!</p>
+
+                        <p>*All lessons are held at Green Level Equestrian, please inquire for any off-site training requests (rates subject to change).</p>
+
                     </div>
-                </div>
 
-
-
-                <div className="container-fluid padding">
-                    <div className="row justify-content-center">
-                        <div className="col-10 col-sm-6 col-md-5 p-2">
-                            <div className="card border">
-                                <img src={images.cards[3]} className="card-img" alt="..." />
-                                <div className="card-img-overlay d-flex align-items-center">
-                                    <div className="card-overlay-title">
-                                        <h3 className="card-title lessons">Standard Lesson</h3>
-                                        <p className="hide">(Tap for Details)</p>
-                                    </div>
-                                    <div className="card-text p-3">
-                                        <p>Private standard lessons are 45-60 minutes in length. </p>
-                                        <p>Shorter private lessons (30 minute), and group lessons are also available.</p>
-
-
-                                    </div>
+                    <div className="item2">
+                        <div className="card lesson-card">
+                            <img src={images.cards[3]} className="card-img" alt="..." />
+                            <div className="card-img-overlay">
+                                <div className="card-overlay-title">
+                                    <h3 className="card-title lessons">Standard Lesson</h3>
+                                    <p className="hide">(Tap for Details)</p>
+                                </div>
+                                <div className="card-text">
+                                    <p>Private standard lessons are 45-60 minutes in length. </p>
+                                    <p>Shorter private lessons (30 minute), and group lessons are also available.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-10 col-sm-6 col-md-5 p-2">
-                            <div className="card border">
+                        <div className="card lesson-card">
                                 <img src={images.cards[4]} className="card-img" alt="..." />
 
-                                <div className="card-img-overlay d-flex align-items-center">
+                                <div className="card-img-overlay">
                                     <div className="card-overlay-title">
                                         <h3 className="card-title lessons">Training Programs</h3>
                                         <p className="hide">(Tap for Details)</p>
                                     </div>
-                                    <div className="card-text p-3">
+                                    <div className="card-text">
                                         <p><strong>Full training:</strong> consists of <u>five</u> weekly private lessons.</p>
                                         <p><strong>Partial training:</strong> consists of <u>three</u> weekly private lessons.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
                     </div>
-                </div>
 
+                   
 
-
-
-                <div className="container-fluid padding">
-                    <div className="row mx-auto justify-content-center">
-                        <div className="col-sm-9 align-self-center">
+                        <div className="item3">
                             <h4>Have any questions or interested in booking a lesson?</h4>
+                            <Link to="/contact">
+                                <button type="button" className="btn btn-outline-light btn-lg w-100">Contact us&nbsp;<i className="fa fa-long-arrow-right"></i></button>
+                            </Link>
+            
                         </div>
-                        <div className="col-sm-3 text-center">
-                            <a href="contact.html"><button type="button" className="btn btn-outline-light btn-lg w-100">Contact us&nbsp;<i className="fa fa-long-arrow-right"></i></button></a>
-                        </div>
-                    </div>
-                    <hr className="bg-light w-75 mx-auto" />
                 </div>
 
 
 
-            
+
 
                 <div className="container-fluid padding">
                     <div className="row mx-auto">
@@ -116,7 +92,7 @@ function Lessons() {
                 </div>
 
 
-            
+
                 <div className="container-fluid padding">
                     <div className="row mx-auto">
                         <div className="col-12 border border-danger rounded">

@@ -7,13 +7,11 @@ function Boarding() {
                 <div className="container-fluid">
                     <div className="row mx-auto">
                         <div className="col-12 text-center">
-                            <h1 className="page-header py-2 my-2">Green Level Equestrian - Apex, NC</h1>
+                            <h1 className="page-header">Green Level Equestrian - Apex, NC</h1>
                         </div>
                     </div>
+                    <hr className="bg-light w-75 mx-auto" />
                 </div>
-
-
-                <hr className="bg-light w-75 mx-auto" />
 
                 <div className="container-fluid padding">
                     <div className="row mx-auto">
