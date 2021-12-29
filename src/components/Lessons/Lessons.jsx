@@ -25,7 +25,7 @@ function Lessons() {
 
                         <p>If you do not have a horse of your own, or you are interested in tuning up your riding on a different horse, Laura Rose runs a training program as well!</p>
 
-                        <p>*All lessons are held at Green Level Equestrian, please inquire for any off-site training requests (rates subject to change).</p>
+                        <em>*All lessons are held at Green Level Equestrian, please inquire for any off-site training requests (rates subject to change).</em>
 
                     </div>
 
@@ -76,34 +76,20 @@ function Lessons() {
 
 
 
-                <div className="container-fluid padding">
-                    <div className="row mx-auto">
-                        <div className="col-12 pb-0 ">
-                            <h2 className="content-header">For Your Consideration</h2>
-                            <p>Once you have some riding under your belt, Laura has numerous resources to help you find an
-                                appropriate horse to lease, or buy. Horse leasing/ownership isn't for everyone, but many people
-                                find that once they start riding all they want to do is RIDE MORE! And while multiple lessons a
-                                week are nice, having some time to ride on your own can be a useful learning tool to discover
-                                new things you would like to learn to do on or off the horse, and different goals for your
-                                lesson time!</p>
+                <div className="container-fluid lessons-container2 padding">
+                    <div className="item1">
+                    <h2 className="header-lg">For Your Consideration</h2>
+                    <hr className='bg-light w-25'></hr>
+                            <p>Once you have some riding under your belt, Laura has numerous resources to help you find an appropriate horse to lease, or buy. Horse leasing/ownership isn't for everyone, but many people find that once they start riding all they want to do is RIDE MORE! And while multiple lessons a week are nice, having some time to ride on your own can be a useful learning tool to discover new things you would like to learn to do on or off the horse, and different goals for your lesson time!</p>
                         </div>
 
-                    </div>
-                </div>
-
-
-
-                <div className="container-fluid padding">
-                    <div className="row mx-auto">
-                        <div className="col-12 border border-danger rounded">
-                            <h2 className="content-header">Safety</h2>
-                            <p>While we want all of our riders to grow their equestrian skills and to have fun, our first
-                                priority for all of our riders is always safety. All riders must wear the appropriate safety
-                                gear during each lesson. Please wear boots/hard soled shoes and long/pants for all lessons.</p>
+                        <div className="item2">
+                        <h2 className="header-lg">Safety</h2>
+                        <hr className='bg-light w-25'></hr>
+                            <p>While we want all of our riders to grow their equestrian skills and to have fun, our first priority for all of our riders is always safety. All riders must wear the appropriate safety gear during each lesson. Please wear boots/hard soled shoes and long/pants for all lessons.</p>
                         </div>
-
-                    </div>
                 </div>
+
             </main>
         </section>
     );

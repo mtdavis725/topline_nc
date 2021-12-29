@@ -46,10 +46,11 @@
   .lesson-card {
     width: 100%;
     height: auto;
-    margin: 1rem;
+    margin: 0;
     
     .card-text {
       margin: 0;
+      font-size: calc(12px + (100vw*0.005));
     }
   }
 
