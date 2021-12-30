@@ -1,7 +1,7 @@
 .about-container {
   display: grid;
   grid-gap: 3rem 5rem;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   grid-template-columns: repeat(6, auto);
   grid-template-rows: auto;
   grid-template-areas: 
@@ -64,11 +64,11 @@
 }
 
 .blockquote {
-  font-size: 1.35rem;
+  font-size: calc(16px + .5vw);
   font-style: italic;
   letter-spacing: .02rem;
   i {
-    font-size: 1.45rem;
+    font-size: calc(16px + .5vw);
     margin: 0 .1rem;
   }
 }

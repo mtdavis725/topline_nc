@@ -8,7 +8,7 @@ function Lessons() {
                 <div className="container-fluid">
                     <div className="row mx-auto">
                         <div className="col-12 text-center">
-                            <h1 className="page-header ">Training with Topline</h1>
+                            <h1>Training with Topline</h1>
                         </div>
                     </div>
                     <hr className="bg-light w-75 mx-auto" />
@@ -17,7 +17,7 @@ function Lessons() {
                 <div className="container-fluid lessons-container padding">
                     
                     <div className="item1">
-                    <h1 className="header-lg">Lesson Details</h1>
+                    <h2>Lesson Details</h2>
                         <p>Laura's standard lessons often revolve around a specific skill, from equitation, to horse
                         behavior, to a dressage movement, to the overall balance of the horse. From there, Laura incorporates a number of related exercises, on the ground and under saddle, to help both horse and rider find a clear understanding of the skill or concept.</p>
 
@@ -64,9 +64,9 @@ function Lessons() {
                    
 
                         <div className="item3">
-                            <h4>Have any questions or interested in booking a lesson?</h4>
+                            <h3>Have any questions or interested in booking a lesson?</h3>
                             <Link to="/contact">
-                                <button type="button" className="btn btn-outline-light btn-lg w-100">Contact us&nbsp;<i className="fa fa-long-arrow-right"></i></button>
+                                <button type="button" className="btn btn-outline-light btn-lg w-50">Contact us&nbsp;<i className="fa fa-long-arrow-right"></i></button>
                             </Link>
             
                         </div>
@@ -78,13 +78,13 @@ function Lessons() {
 
                 <div className="container-fluid lessons-container2 padding">
                     <div className="item1">
-                    <h2 className="header-lg">For Your Consideration</h2>
+                    <h2>For Your Consideration</h2>
                     <hr className='bg-light w-25'></hr>
                             <p>Once you have some riding under your belt, Laura has numerous resources to help you find an appropriate horse to lease, or buy. Horse leasing/ownership isn't for everyone, but many people find that once they start riding all they want to do is RIDE MORE! And while multiple lessons a week are nice, having some time to ride on your own can be a useful learning tool to discover new things you would like to learn to do on or off the horse, and different goals for your lesson time!</p>
                         </div>
 
                         <div className="item2">
-                        <h2 className="header-lg">Safety</h2>
+                        <h2>Safety</h2>
                         <hr className='bg-light w-25'></hr>
                             <p>While we want all of our riders to grow their equestrian skills and to have fun, our first priority for all of our riders is always safety. All riders must wear the appropriate safety gear during each lesson. Please wear boots/hard soled shoes and long/pants for all lessons.</p>
                         </div>

@@ -19,7 +19,7 @@ function About() {
 
         <div className="container-fluid about-container padding">   
                 <div className="item1">
-                    <h1 className="header-lg pb-1">Laura Rose Heymann</h1>
+                    <h2 className="header-lg pb-1">Laura Rose Heymann</h2>
                     <p>Laura's devotion to all things horses began at the age of six in Charlottesville, VA, when her mother first enrolled her in riding lessons. From there, Laura became increasingly absorbed in the horseback riding community as a hunter/jumper, eventer, and foxhunter, under the instruction of Page Turner. </p>
                     <p>With 11 years of intense training from Page, Page has provided the foundation of Laura's training methods. Through Page, Laura was first introduced to Natural Horsemanship by Louis Wood. </p>
                     <p>Natural Horsemanship drastically altered Laura's perception of working with horses and provided her with a new trajectory towards not just riding, but the actual training and teaching of the horse. Thanks to Page and Louis (and Laura's supportive parents :) Laura had the opportunity to participate in dozens of clinics on different horses of various skill levels.</p>
@@ -59,7 +59,7 @@ function About() {
        
         <div className="container-fluid about-container2 padding">
             <div className="item1">
-                <h1 className="text-center page-header">Training Philosophy</h1>
+                <h1 className="text-center">Training Philosophy</h1>
                 <hr className="bg-light w-75 mx-auto" />
             </div>
 

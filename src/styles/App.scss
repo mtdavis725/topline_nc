@@ -20,10 +20,11 @@ html, body {
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   height: 100%;
+  font-size: 1rem;
 }
 
 section {
-  padding: 1rem 0 2rem 0;
+  padding: 2.5rem 0;
 }
 
 .text-link {
@@ -31,14 +32,21 @@ section {
   font-style: italic;
 }
 
-.page-header {
-  font-size: 2.3rem;
-  padding: 1rem 0 0 0;
+h1 {
+  font-size: calc(34px + .5vw);
 }
 
-.header-lg {
-  padding: 1rem 0 .5rem 0;
-  font-size: 1.8rem;
+h2 {
+  font-size: calc(26px + .5vw);
+}
+
+h3 {
+  font-size: calc(18px + .5vw);
+}
+
+
+em{
+  font-size: 14px;
 }
 
 .padding {
