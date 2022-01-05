@@ -1,40 +1,85 @@
 /////////// FOOTER /////////// 
-footer { 
-    background-color: $secondaryDark;
-    padding: 0 1rem;
-    .footer-logo {
-      width: 100%;
-      max-width: 10rem; 
-      border: 2.5px solid $darkRed;
-      border-radius: 8px;
-    }
-    .redirect {
-      position: relative;
-      top: -20px;
-      i {
-        font-size: 2.4rem;
-        color: $white;
-      }
-      &:hover {
-        color: $white;
-        animation: scrollup 400ms 2;
-      }
-    }
+footer {
+  background-color: $secondaryDark;
+}
+
+.footer-container {
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'redirect redirect redirect'
+  'logo contact copyright';
+  place-items: center;
+
+  .item1 {
+    grid-area: redirect;
   }
+  .item2 {
+    grid-area: logo;
+  }
+  .item3 {
+    grid-area: contact;
+    text-align: center;
+  }
+  .item4 {
+    grid-area: copyright;
+    text-align: center;
+  }
+
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 10rem; 
+  border: 2.5px solid $darkRed;
+  border-radius: 8px;
+}
+
+.redirect {
+  position: relative;
+  top: -2.5rem;
+  
+  i {
+    font-size: 2.4rem;
+    color: $white;
+  }
+  &:hover {
+    color: $white;
+    animation: scrollup 400ms 2;
+  
+  }
+}
 
   @keyframes scrollup {
     from {
-      top: -24px;
-      border-bottom: 5px double white;
+      top: -2.5rem;
+      
     }
     to {
-      top: -30px;
-      border-bottom: 5px double white;
+      top: -3rem;
+      
     }
   }
 
-  ////////// Bootstrap small column break (tablet) //////////
-@media (max-width: 576px) {
+/// Bootstrap small column break (tablet) ///
+
+@media (max-width: 760px) {
+  .footer-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      'redirect'
+      'logo' 
+      'contact' 
+      'copyright';
+
+    .item3 {
+      padding: 0.5rem 0;
+    }
+  }
   .footer-logo {
       max-width: 13rem; 
     }

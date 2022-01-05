@@ -1,0 +1,30 @@
+.boarding-container {
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'carousel carousel'
+  'content1 content2'
+  'content3 content3'
+  'actionItem actionItem';
+  place-items: center;
+
+  .item1 {
+    grid-area: carousel;
+    width: 80vw;
+  }
+  .item2 {
+    grid-area: content1;
+  }
+  .item3 {
+    grid-area: content2;
+  }
+  .item4 {
+    grid-area: content3;
+  }
+  .item5 {
+    grid-area: actionItem;
+  }
+}

@@ -1,4 +1,5 @@
 import images from '../../images' /*Array of images from images folder*/
+import { Link } from 'react-router-dom'
 
 function Boarding() {
     return(
@@ -24,25 +25,24 @@ function Boarding() {
                     <hr className="bg-light w-75 mx-auto" />
                 </div>
 
-                <div className="container-fluid padding">
-                    <div className="row justify-content-center">
-                        <div className="col-12">
+                <div className="boarding-container padding">
+                    <div className="item1">
                             <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <img src={images.carousel[0]} className="d-block mx-auto" alt="..." />
+                                        <img src={images.carousel[0]} className="img-fluid" alt="..." />
                                     </div>
                                     <div className="carousel-item">
-                                        <img src={images.carousel[1]} className="d-block mx-auto" alt="..." />
+                                        <img src={images.carousel[1]} className="img-fluid" alt="..." />
                                     </div>
                                     <div className="carousel-item">
-                                        <img src={images.carousel[2]} className="d-block mx-auto" alt="..." />
+                                        <img src={images.carousel[2]} className="img-fluid" alt="..." />
                                     </div>
                                     <div className="carousel-item">
-                                        <img src={images.carousel[3]}className="d-block mx-auto" alt="..." />
+                                        <img src={images.carousel[3]}className="img-fluid" alt="..." />
                                     </div>
                                     <div className="carousel-item">
-                                        <img src={images.carousel[4]} className="d-block mx-auto" alt="..." />
+                                        <img src={images.carousel[4]} className="img-fluid" alt="..." />
                                     </div>
                                 </div>
                                 <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -55,12 +55,10 @@ function Boarding() {
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        
+                    
 
-                <div className="container-fluid">
-                    <div className="row mx-auto">
-                        <div className="col-sm-6">
+                        <div className="item2">
                             <div className="card h-100" style={{backgroundColor: `#090909`}}>
                                 <div className="card-body">
                                     <h3 className="card-title text-center"><u>Facilty features:</u></h3>
@@ -69,8 +67,10 @@ function Boarding() {
                                         cold water. </p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-sm-6">
+                            </div>
+
+                            <div className="item3">
+                        
                             <div className="card h-100" style={{backgroundColor: `#090909`}}>
                                 <div className="card-body">
                                     <h3 className="card-title text-center"><u>Riding options:</u></h3>
@@ -79,13 +79,12 @@ function Boarding() {
                                         including a roll top, brush jump and coop! </p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                            </div>
+                        
+                    
+                
 
-                <div className="container-fluid padding">
-                    <div className="row mx-auto">
-                        <div className="col-12">
+                            <div className="item4">
                             <div className="card p-3">
                                 <div className="card-body">
                                     <h3 className="card-title text-center mb-4">What's included with board?</h3>
@@ -101,7 +100,7 @@ function Boarding() {
                                                 <li>Scheduling of veterinarian and farrier services</li>
                                             </ul>
                                         </div>
-                                        <div className="col-12 col-sm-6 p-0">
+                                        <div>
                                             <ul>
                                                 <li>2 daily grain feedings</li>
                                                 <li>3-4 feedings orchard grass hay</li>
@@ -113,21 +112,19 @@ function Boarding() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                            </div>
 
-                <div className="container-fluid padding">
-                    <div className="row mx-auto justify-content-center">
-                        <div className="col-sm-9 align-self-center">
+                
+                        <div className="item5">
                             <h4>Interested in checking boarding availability or scheduling a tour of our facility?</h4>
+                            <Link to="/contact">
+                                <button type="button" className="btn btn-outline-light btn-md w-50">Contact us&nbsp;<i className="fa fa-long-arrow-right"></i></button>
+                            </Link>
+                            
                         </div>
-                        <div className="col-sm-3 text-center">
-                            <a href="contact.html"><button type="button" class="btn btn-outline-light btn-lg w-100">Contact us&nbsp;<i class="fa fa-long-arrow-right"></i></button></a>
                         </div>
-                    </div>
 
-                </div>
+                
 
 
 

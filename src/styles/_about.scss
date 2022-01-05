@@ -28,7 +28,7 @@
   }
   .item5 {
     grid-area: img3;
-    align-self: start;
+    
   }
 }
 
@@ -37,13 +37,14 @@
 .about-container2 {
   display: grid;
   padding: 0 2rem;
+  grid-gap: 1.5rem 3rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-template-areas: 
     'header header'
     'quote quote'
     'content1 content2';
-  grid-gap: 1.5rem 2rem;
+  
   .item1 {
     grid-area: header;
   }
