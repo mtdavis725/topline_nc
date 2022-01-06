@@ -1,19 +1,21 @@
 .about-container {
   display: grid;
   grid-gap: 3rem 5rem;
-  padding: 1rem 2rem;
+  padding: 2rem;
+  place-items: center;
   grid-template-columns: repeat(6, auto);
   grid-template-rows: auto;
   grid-template-areas: 
     'content1 content1 content1 content1 img2 img2'
-    'img3 img3 img3 content2 content2 content2';
-  place-items: center;
+    'img3 img3 img3 content2 content2 content2'
+  ;
+  
+
   img {
     max-height: 375px;
   }
   .item1 {
     grid-area: content1;
-    
   }
   .item2 {
     grid-area: img1;

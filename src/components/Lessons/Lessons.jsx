@@ -66,11 +66,17 @@ function Lessons() {
                         <div className="item3">
                             <h3>Have any questions or interested in booking a lesson?</h3>
                             <Link to="/contact">
-                                <button type="button" className="btn btn-outline-light btn-md w-50">Contact us&nbsp;<i className="fa fa-long-arrow-right"></i></button>
+                                <button type="button" className="btn btn-outline-light btn-lg">Contact us&nbsp;<i className="fa fa-long-arrow-right"></i></button>
                             </Link>
-            
+                            <hr className="bg-light w-75 mx-auto" />
                         </div>
+                        
+                        
                 </div>
+
+                
+
+                
 
 
 
