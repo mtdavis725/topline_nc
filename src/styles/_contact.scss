@@ -1,0 +1,33 @@
+.contact-container {
+  display: grid;
+  padding: 1.5rem 2rem;
+  grid-gap: 0.5rem;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    'form googleMap'
+  ;
+  
+  .item1, .item2 {
+    padding: 1rem 0;
+  }
+
+  .item1 {
+    grid-area: form;
+  }
+  .item2 {
+    grid-area: googleMap;
+  }
+
+}
+
+@media (max-width: 760px) {
+  .contact-container {
+    padding: 0 1rem;
+    grid-template-areas: 
+    'form form'
+    'googleMap googleMap'
+    ;
+   }
+} 

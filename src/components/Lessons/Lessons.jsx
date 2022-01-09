@@ -1,18 +1,14 @@
 import images from '../../images' /*Array of images from images folder*/
 import { Link } from 'react-router-dom'
+import PageTitle from '../PageTitle';
+
 
 function Lessons() {
     return (
         <section>
             <main className="container-xl">
-                <div className="container-fluid">
-                    <div className="row mx-auto">
-                        <div className="col-12 text-center">
-                            <h1>Training with Topline</h1>
-                        </div>
-                    </div>
-                    <hr className="bg-light w-75 mx-auto" />
-                </div>
+            <PageTitle title="Training with Topline"></PageTitle>
+               
 
                 <div className="container-fluid lessons-container padding">
                     

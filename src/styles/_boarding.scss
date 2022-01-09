@@ -1,19 +1,26 @@
 .boarding-container {
   display: grid;
   padding: 1rem;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem 2rem;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   grid-template-areas: 
-  'carousel carousel'
-  'content1 content2'
-  'content3 content3'
-  'actionItem actionItem';
+  'content1 carousel carousel carousel carousel'
+  'content2 content2 content2 content3 content3'
+  'actionItem actionItem actionItem actionItem actionItem';
   place-items: center;
+ .item2, .item3, .item4, .item5 {
+    padding: 1rem;
+  }
 
   .item1 {
     grid-area: carousel;
-    width: 80vw;
+    width: 90%;
+    text-align: center;
+    padding: 1rem 0;
+    img {
+      max-height: 475px;
+    }
   }
   .item2 {
     grid-area: content1;
@@ -23,8 +30,35 @@
   }
   .item4 {
     grid-area: content3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primaryDark;
+    padding: 2rem;
+    border-radius: 15px;
   }
   .item5 {
     grid-area: actionItem;
   }
+  
 }
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon  {
+  height: 3rem;
+  width: 3rem;
+  background-color: black;
+  border: 6px solid black;
+  border-radius: 50%;
+}
+/*
+@media (max-width: 860px) {
+  .boarding-container {
+    .item1 {
+      width: 90%;
+      img {
+        max-height: 100px;
+      }
+    }
+  }
+} */@debug

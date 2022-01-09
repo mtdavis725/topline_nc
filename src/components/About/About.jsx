@@ -1,3 +1,4 @@
+import PageTitle from '../PageTitle';
 import { Link } from 'react-router-dom'
 import images from '../../images' /*Array of images from images folder*/
 
@@ -5,16 +6,7 @@ function About() {
     return (
     <section>
         <main className="container-xl">
-
-        <div className="container-fluid">
-            <div className="row mx-auto">
-                <div className="col-12 text-center">
-                    <h1 className="page-header">Meet the Trainer</h1>
-                </div>
-            </div>
-            <hr className="bg-light w-75 mx-auto" />
-        </div>
-
+        <PageTitle title="Meet the Trainer"></PageTitle>
         
 
         <div className="container-fluid about-container padding">   

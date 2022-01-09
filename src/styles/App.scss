@@ -7,6 +7,7 @@
 @import './lessons';
 @import './boarding';
 @import './gallery';
+@import './contact';
 
 ///////// GLOBAL /////////
 * {
@@ -25,7 +26,7 @@ html, body {
 }
 
 section {
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 
 .text-link {
@@ -45,7 +46,6 @@ h3 {
   font-size: calc(20px + .5vw);
 }
 
-
 em{
   font-size: 14px;
 }
@@ -55,10 +55,15 @@ em{
 }
 
 
-
-
-.lessons {
-  text-shadow: 2px 2px 2px black;
+/// PageTitle component styling ///
+.page-title {
+  text-align: center;
+  h1 {
+    padding-bottom: 0.8rem;
+  }
+  p {
+    padding: 0.8rem 0;
+  }
 }
 
 
