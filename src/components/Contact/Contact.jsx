@@ -3,37 +3,36 @@ import PageTitle from '../PageTitle';
 function Contact() {
     return(
         <section>
-            <main class="container-xl">
+            <main className="container-xl">
             <PageTitle title="Let's get in touch!"></PageTitle>
               
-            <div class="container-fluid contact-container padding">
-                <div class="item1" id="form_container">
-                    <p class="text-center">
+            <div className="contact-container padding">
+                <div className="item1" id="form_container">
+                    <p className="text-center">
                         Please send us your message below. We will get back to you as quickly as possible!
                         <em> *Lessons cannot be scheduled through this form.</em>
                     </p>
 
                     <form name="contact" method="POST" data-netlify="true">
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="message">
                                 Message:</label>
-                            <textarea class="form-control" type="textarea" id="message" name="message"
+                            <textarea className="form-control" type="textarea" id="message" name="message"
                                 maxlength="6000" rows="6"></textarea>
                         </div>
                         <div className="form-row">
-                        
-                            <div class="form-group col-sm-6">
+                            <div className="form-group col-sm-6">
                                 <label for="name">Your Name:</label>
-                                <input type="text" class="form-control" id="name" name="name" required />
+                                <input type="text" className="form-control" id="name" name="name" required />
                             </div>
-                            <div class="form-group col-sm-6">
+                            <div className="form-group col-sm-6">
                                 <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" name="email" required />
+                                <input type="email" className="form-control" id="email" name="email" required />
                             </div>
                         </div>
                         
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-outline-light btn-md w-50 float-right">Submit&nbsp;<span><i class="fa fa-envelope"></i></span></button>
+                            <div className="form-group">
+                                <button type="submit" className="btn btn-outline-light btn-md w-50 float-right">Submit&nbsp;<span><i className="fa fa-envelope"></i></span></button>
                             </div>
                     </form>
 
@@ -47,13 +46,11 @@ function Contact() {
 
                 </div>
 
-                <div class="item2">
-                    <div class="embed-responsive embed-responsive-4by3 h-100">
-                        <iframe class="embed-responsive-item rounded"
-                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAE3hNxNLhkI7uPWlxsONDxo5MD2_Bk6iE&q=place_id:ChIJX1kwzrjsrIkRlTtqk3S-lHw&" title="...">
-                        </iframe>
-                    </div>
-                </div> 
+                <div className="item2 embed-responsive embed-responsive-4by3">
+                    <iframe className="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJoV6tzbjsrIkRZGlUWXLreSg&key=AIzaSyAE3hNxNLhkI7uPWlxsONDxo5MD2_Bk6iE" title="..." ></iframe>
+                </div>
+                    
+                
 
                 </div>
             </main>

@@ -1,64 +1,79 @@
 .boarding-container {
   display: grid;
   padding: 1rem;
-  grid-gap: 1.5rem 2rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem 1.5rem;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  'content1 carousel carousel carousel carousel'
-  'content2 content2 content2 content3 content3'
-  'actionItem actionItem actionItem actionItem actionItem';
+  'carousel carousel'
+  'content1 content2'
+  'actionItem actionItem';
   place-items: center;
- .item2, .item3, .item4, .item5 {
+ .item2, .item3, .item4 {
     padding: 1rem;
   }
 
   .item1 {
     grid-area: carousel;
-    width: 90%;
+    width: 100%;
     text-align: center;
     padding: 1rem 0;
     img {
-      max-height: 475px;
+      max-height: 460px;
     }
   }
   .item2 {
     grid-area: content1;
   }
+
   .item3 {
     grid-area: content2;
-  }
-  .item4 {
-    grid-area: content3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: $primaryDark;
     padding: 2rem;
     border-radius: 15px;
   }
-  .item5 {
+  .item4 {
     grid-area: actionItem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem 2rem;
+    h3 {
+      margin: 0;
+    }
+    button {
+      min-width: 11rem;
+    }
+    hr {
+      grid-row: 2 / 3;
+      grid-column: 1 / 3;
+    }
   }
   
 }
 
 
 .carousel-control-prev-icon, .carousel-control-next-icon  {
-  height: 3rem;
-  width: 3rem;
-  background-color: black;
-  border: 6px solid black;
-  border-radius: 50%;
+  height: calc(28px + 1vw);
+  width: calc(28px + 1vw);
 }
-/*
-@media (max-width: 860px) {
+
+@media (max-width: 660px) {
   .boarding-container {
-    .item1 {
-      width: 90%;
-      img {
-        max-height: 100px;
-      }
+    grid-gap: 1rem;
+    grid-template-areas: 
+  'carousel carousel'
+  'content1 content1'
+  'content2 content2'
+  'actionItem actionItem';
+    .item3 {
+      padding: 2rem 4rem;
+    }
+    .item4 {
+      grid-template-columns: auto;
+      grid-gap: 1rem 2rem;
+      text-align: center;
+  
     }
   }
-} */@debug
+}

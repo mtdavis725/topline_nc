@@ -10,10 +10,11 @@ function Lessons() {
             <PageTitle title="Training with Topline"></PageTitle>
                
 
-                <div className="container-fluid lessons-container padding">
+                <div className="lessons-container padding">
                     
                     <div className="item1">
                     <h2>Lesson Details</h2>
+                    
                         <p>Laura's standard lessons often revolve around a specific skill, from equitation, to horse
                         behavior, to a dressage movement, to the overall balance of the horse. From there, Laura incorporates a number of related exercises, on the ground and under saddle, to help both horse and rider find a clear understanding of the skill or concept.</p>
 
@@ -30,7 +31,7 @@ function Lessons() {
                             <img src={images.cards[3]} className="card-img" alt="..." />
                             <div className="card-img-overlay">
                                 <div className="card-overlay-title">
-                                    <h3 className="card-title lessons">Standard Lesson</h3>
+                                    <h4 className="card-title">Standard Lesson</h4>
                                     <p className="hide">(Tap for Details)</p>
                                 </div>
                                 <div className="card-text">
@@ -45,7 +46,7 @@ function Lessons() {
 
                                 <div className="card-img-overlay">
                                     <div className="card-overlay-title">
-                                        <h3 className="card-title lessons">Training Programs</h3>
+                                        <h4 className="card-title">Training Programs</h4>
                                         <p className="hide">(Tap for Details)</p>
                                     </div>
                                     <div className="card-text">
@@ -78,7 +79,7 @@ function Lessons() {
 
 
 
-                <div className="container-fluid lessons-container2 padding">
+                <div className="lessons-container2 padding">
                     <div className="item1">
                     <h2>For Your Consideration</h2>
                     <hr className='bg-light w-25'></hr>

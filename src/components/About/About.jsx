@@ -9,7 +9,7 @@ function About() {
         <PageTitle title="Meet the Trainer"></PageTitle>
         
 
-        <div className="container-fluid about-container padding">   
+        <div className="about-container padding">   
                 <div className="item1">
                     <h2 className="header-lg pb-1">Laura Rose Heymann</h2>
                     <p>Laura's devotion to all things horses began at the age of six in Charlottesville, VA, when her mother first enrolled her in riding lessons. From there, Laura became increasingly absorbed in the horseback riding community as a hunter/jumper, eventer, and foxhunter, under the instruction of Page Turner. </p>

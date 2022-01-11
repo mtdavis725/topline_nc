@@ -26,16 +26,17 @@ html, body {
 }
 
 section {
-  padding: 2rem 0;
+  padding: 2rem 0 3rem 0;
 }
 
 .text-link {
   color: $white;
   font-style: italic;
+  text-decoration: underline;
 }
 
 h1 {
-  font-size: calc(34px + .5vw);
+  font-size: calc(32px + .5vw);
 }
 
 h2 {
@@ -58,8 +59,10 @@ em{
 /// PageTitle component styling ///
 .page-title {
   text-align: center;
+  padding: 0 2rem;
   h1 {
     padding-bottom: 0.8rem;
+    font-variant: small-caps;
   }
   p {
     padding: 0.8rem 0;
@@ -82,6 +85,11 @@ em{
   .padding {
     padding-bottom: 1rem;
   }
+
+  /// PageTitle component styling ///
+.page-title {
+  padding: 0; 
+}
 }
 
 /*

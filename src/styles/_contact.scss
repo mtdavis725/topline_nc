@@ -1,7 +1,7 @@
 .contact-container {
   display: grid;
   padding: 1.5rem 2rem;
-  grid-gap: 0.5rem;
+  grid-gap: 3rem;
   place-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -22,12 +22,16 @@
 
 }
 
-@media (max-width: 760px) {
+@media (max-width: 975px) {
   .contact-container {
     padding: 0 1rem;
     grid-template-areas: 
     'form form'
     'googleMap googleMap'
     ;
+    .item1, .item2 {
+      padding: 1rem;
+      width: 90%;
+    }
    }
 } 

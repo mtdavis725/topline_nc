@@ -81,6 +81,10 @@
 }
 
 @media (max-width: 580px) {
+  .lessons-container, .lessons-container2 {
+    padding: 0 1rem;
+  }
+  
   .lessons-container {
     .item2 {
       flex-direction: column;
@@ -94,12 +98,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-  }
-  .item3 {
-    grid-template-columns: auto;
-    grid-gap: 1rem 2rem;
-    text-align: center;
-
   }
   }
 } 
