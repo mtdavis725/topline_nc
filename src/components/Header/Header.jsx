@@ -1,22 +1,35 @@
 import images from '../../images'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
+
 
 function Header() {
-    let logo = images.logo;
+    const location = useLocation();
+    const pathname = location.pathname;
+    const currentPath = (pathname) => {
+        if(pathname === "/") {
+            return "Home"
+        } else {
+            return pathname.charAt(1).toUpperCase() + pathname.slice(2);
+        }
+    }
+    const logo = images.logo;
+
     return (
-        <header className="hero-image padding">
+        <header className="hero-image">
             <div className="hero-content"> 
+                <div className="item1">
+                    <img src={logo} alt="Header logo" className="header-logo img-fluid" />
+                </div>
 
-                <img src={logo} alt="Header logo" className="header-logo" />
-
-                <nav className="navbar navbar-expand-sm navbar-dark p-0 ">
+                <nav className="item2 navbar navbar-expand-sm navbar-dark p-0">
                     <a href="https://www.facebook.com/greenlevelequestrian" target="./blank" className="mobile-hidden">
                         <i className="fa fa-facebook-square social-link"></i>
                     </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                        {currentPath(pathname)}
+                        <i class="fa fa-arrow-down d-block"></i>
                     </button>
                     {/*className="collapse navbar-collapse"*/}
                     <div className="collapse navbar-collapse" id="navbarResponsive">

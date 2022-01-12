@@ -36,15 +36,15 @@ section {
 }
 
 h1 {
-  font-size: calc(32px + .5vw);
+  font-size: calc(32px + 1vw);
 }
 
 h2 {
-  font-size: calc(26px + .5vw);
+  font-size: calc(22px + 1vw);
 }
 
 h3 {
-  font-size: calc(20px + .5vw);
+  font-size: calc(16px + 1vw);
 }
 
 em{
@@ -55,6 +55,11 @@ em{
   padding-bottom: 2rem;
 }
 
+.container {
+  display: grid;
+  padding: 1.5rem 3rem;
+  place-items: center;
+}
 
 /// PageTitle component styling ///
 .page-title {
