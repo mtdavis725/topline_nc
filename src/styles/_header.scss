@@ -25,14 +25,18 @@ header {
         grid-row: 1 / 2;
         padding: 1rem 2rem;
         .header-logo {
-            max-height: 350px;
+            max-height: 300px;
             border: 3px solid $darkRed;
             border-radius: 15px;
           }
     }
-    .item2 {
+    .item2 {   
         grid-column: 1 / 13;
         grid-row: 2 / 3;
+        button {
+            align-self: stretch;
+            margin: .4rem;
+        }
     }
 }
 
@@ -59,7 +63,7 @@ a .social-link {
 }
   
 .nav-link {
-    font-size: 1.3rem;
+    font-size: calc(16px + 1vw);
     font-weight: 500;
     font-family: "Roboto Slab";
     font-variant: small-caps;
@@ -94,11 +98,15 @@ a .social-link {
         justify-content: center !important;
     }
     .nav-item {
-        background-color: $primaryDark;
+        background-color: rgba($color: #000, $alpha: 0.5);
+        text-align: center;
+        .active {
+            display: none;
+        }
     }
-
     .navbar-toggler {
         margin-left: 0.5rem;
+        color: $white !important;
     }
 
     //Toggle social link OUTSIDE nav-toggler VISIBLE
