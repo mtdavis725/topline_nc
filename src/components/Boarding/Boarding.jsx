@@ -1,5 +1,6 @@
 import PageTitle from '../PageTitle';
 import images from '../../images' /*Array of images from images folder*/
+import { Carousel } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 function Boarding() {
@@ -14,6 +15,42 @@ function Boarding() {
 
             <div className="boarding-container padding">
                 <div className="item1">
+                <Carousel fade nextLabel="" prevLabel="">
+                    <Carousel.Item>
+                        <img className="img-fluid" src={images.carousel[0]} alt="First slide"/>
+                        <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <img className="img-fluid" src={images.carousel[1]} alt="Second slide"/>
+                        <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <img className="img-fluid" src={images.carousel[2]} alt="Third slide"/>
+                        <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <img className="img-fluid" src={images.carousel[2]} alt="Fourth slide"/>
+                        <Carousel.Caption>
+                        <h3>Fourth slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    </Carousel>
+                </div>
+
+{/*
                     <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
@@ -42,6 +79,7 @@ function Boarding() {
                         </a>
                     </div>
                 </div>
+*/}
 
                 <div className="item2">
                     
