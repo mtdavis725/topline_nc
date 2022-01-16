@@ -9,19 +9,19 @@ let galleryImages = images.gallery.map((item, index) => {
 
 function Gallery() {
     return (
-        <section>
-            <main className="container-xl">
+        
+            <main>
             <PageTitle title="Photo Gallery"></PageTitle>
             
             <p class="text-center"> Visit our <Link to="https://www.facebook.com/greenlevelequestrian" className="text-link">Facebook</Link> page to see more photos and stay up to date with us!</p>
 
-            <div className="gallery-container">
+            <div className="grid-container gallery-container padding">
                 {galleryImages}     
                 
             </div> 
              
             </main>
-        </section>
+        
 
     );
 }

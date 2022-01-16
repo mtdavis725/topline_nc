@@ -25,14 +25,8 @@ html, body {
   font-size: 1rem;
 }
 
-section {
-  padding: 2rem 0 3rem 0;
-}
-
-.text-link {
-  color: $white;
-  font-style: italic;
-  text-decoration: underline;
+main {
+  padding: 2rem 0 4rem 0;
 }
 
 h1 {
@@ -51,8 +45,19 @@ em{
   font-size: 14px;
 }
 
+.text-link {
+  color: $white;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .padding {
   padding-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  padding: 1rem 2rem;
 }
 
 
@@ -68,12 +73,6 @@ em{
   }
 }
 
-
-////////// Bootstrap small column break (tablet) //////////
-@media (max-width: 992px) {
-  
-}
-
 ////////// Bootstrap small column break (tablet) //////////
 @media (max-width: 768px) {
   
@@ -81,6 +80,10 @@ em{
 
 ////////// Bootstrap small column break (tablet) //////////
 @media (max-width: 440px) {
+  .container {
+    padding: 0 1rem;
+  }
+
   .padding {
     padding-bottom: 1rem;
   }

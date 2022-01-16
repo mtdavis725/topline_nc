@@ -5,12 +5,12 @@ import PageTitle from '../PageTitle';
 
 function Lessons() {
     return (
-        <section>
-            <main className="container-xl">
+        
+            <main>
             <PageTitle title="Training with Topline"></PageTitle>
                
 
-                <div className="lessons-container padding">
+                <div className="grid-container lessons-container padding">
                     
                     <div className="item1">
                     <h2>Lesson Details</h2>
@@ -94,7 +94,7 @@ function Lessons() {
                 </div>
 
             </main>
-        </section>
+        
     );
 }
 

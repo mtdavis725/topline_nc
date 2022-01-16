@@ -4,18 +4,16 @@ footer {
 }
 
 .footer-container {
-  display: grid;
-  padding: 1rem;
   grid-gap: 1rem;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
   'redirect redirect redirect'
   'logo contact copyright';
-  place-items: center;
 
   .item1 {
     grid-area: redirect;
+    justify-self: center;
   }
   .item2 {
     grid-area: logo;

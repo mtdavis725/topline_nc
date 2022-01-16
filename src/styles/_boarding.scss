@@ -1,6 +1,5 @@
 .boarding-container {
-  display: grid;
-  padding: 1rem;
+  
   grid-gap: 2rem 1.5rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -17,7 +16,7 @@
     grid-area: carousel;
     width: 100%;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem 0 2rem 0;
     img {
       max-height: 460px;
     }
@@ -56,6 +55,19 @@
 .carousel-control-prev-icon, .carousel-control-next-icon  {
   height: calc(28px + 1vw);
   width: calc(28px + 1vw);
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+.carousel-caption {
+  background-color: $secondaryDark;
+  padding: .5rem;
+  bottom: -20px;
+  border-radius: 15px;
+  h4 {
+    margin: 0;
+  }
 }
 
 @media (max-width: 660px) {

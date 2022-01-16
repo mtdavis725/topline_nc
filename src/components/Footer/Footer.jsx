@@ -1,14 +1,19 @@
 import images from '../../images'
-import { Link } from 'react-router-dom'
 
 function Footer() {
-    return (
-        <footer class="padding">
-            <div class="footer-container">
+    const redirect = () => {
+        window.scrollTo(0, 0);
+    }
 
-            <Link to="/" className="item1 redirect" >
-                <i className="fa fa-long-arrow-up"></i>
-            </Link>
+    return (
+        <footer className="padding">
+            
+            <div className="container-xl">
+            <div className="grid-container footer-container">
+            
+            <div className="item1 redirect" >
+                <i className="fa fa-long-arrow-up" onClick={redirect}></i>
+            </div>
 
             <img src={images.logo} alt="Footer logo" className="item2 footer-logo" />
                 
@@ -21,7 +26,7 @@ function Footer() {
             </div>
                 
                 <span className="item4">&copy; Topline Training 2022</span>
-
+            </div>
             </div>
         </footer>
     );

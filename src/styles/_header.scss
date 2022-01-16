@@ -1,7 +1,6 @@
 ////////// HEADER //////////
 header {
-    display: grid;
-    place-items: center;
+    
     border-bottom: 4px double $white;
 }
 
@@ -11,11 +10,8 @@ header {
   position: relative;
 }
 
-.hero-content {
-    display: grid;
+.hero-container {
     place-items: center;
-    max-width: 1110px;
-    padding: 2rem;
     padding-bottom: 3rem;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -67,7 +63,7 @@ a .social-link {
 }
   
 .nav-link {
-    font-size: calc(16px + .5vw);
+    font-size: clamp(16px, 1.5vw, 22px);
     font-weight: 500;
     font-family: "Roboto Slab";
     .active {

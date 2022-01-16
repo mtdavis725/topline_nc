@@ -2,11 +2,11 @@ import PageTitle from '../PageTitle';
 
 function Contact() {
     return(
-        <section>
-            <main className="container-xl">
+        
+            <main>
             <PageTitle title="Let's get in touch!"></PageTitle>
               
-            <div className="contact-container padding">
+            <div className="grid-container contact-container padding">
                 <div className="item1" id="form_container">
                     <p className="text-center">
                         Please send us your message below. We will get back to you as quickly as possible!
@@ -54,7 +54,7 @@ function Contact() {
 
                 </div>
             </main>
-        </section>
+        
     );
 }
 
