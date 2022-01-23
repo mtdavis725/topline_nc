@@ -32,9 +32,9 @@ function Header() {
                 <div className="item2">
                     <Navbar collapseOnSelect expanded={expanded} expand="sm" bg="transparent" variant="dark">
 
-                        <NavLink to="https://www.facebook.com/greenlevelequestrian" className="mobile-hidden">
+                        <Nav.Link href="https://www.facebook.com/greenlevelequestrian" target="_blank" className="mobile-hidden">
                             <i className="fa fa-facebook-square social-link"></i>
-                        </NavLink>
+                        </Nav.Link>
                     
                         <Navbar.Toggle children={currentPath(pathname)} onClick={() => setExpanded(expanded ? false : "expanded")} className="dropdown-toggle" aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
@@ -70,7 +70,7 @@ function Header() {
                                     </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link as={NavLink} to="https://www.facebook.com/greenlevelequestrian" className="mobile-visible">
+                                    <Nav.Link as="a" href="https://www.facebook.com/greenlevelequestrian" target="_blank" className="mobile-visible">
                                         <i className="fa fa-facebook-square social-link"></i>
                                     </Nav.Link>
                                 </Nav.Item>

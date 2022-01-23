@@ -27,7 +27,7 @@
 
   .item3 {
     grid-area: content2;
-    background-color: $primaryDark;
+    background-color: $secondaryDark;
     padding: 2rem;
     border-radius: 15px;
   }
@@ -61,7 +61,7 @@
   overflow: visible;
 }
 .carousel-caption {
-  background-color: $secondaryDark;
+  background-color: $darkRed;
   padding: .5rem;
   bottom: -20px;
   border-radius: 15px;

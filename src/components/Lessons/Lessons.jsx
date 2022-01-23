@@ -79,7 +79,7 @@ function Lessons() {
 
 
 
-                <div className="lessons-container2 padding">
+                <div className="grid-container lessons-container2 padding">
                     <div className="item1">
                     <h2>For Your Consideration</h2>
                     <hr className='bg-light w-25'></hr>

@@ -9,7 +9,11 @@
     'actionItem'
   ;
 
-  .item1, .item2, .item3 {
+  .item1 {
+    padding-bottom: 1rem;
+  }
+  
+  .item2, .item3 {
     padding: 1rem;
   }
   .item1 {
@@ -44,7 +48,6 @@
 }
 
 .lessons-container2 {
-  
   grid-gap: 1.5rem 3rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -52,7 +55,7 @@
     padding: 1rem;
   }
   .item2 {
-    background-color: $primaryDark;
+    background-color: $secondaryDark;
     border-radius: 10px;
   }
 }

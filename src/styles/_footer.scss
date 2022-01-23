@@ -1,6 +1,6 @@
 /////////// FOOTER /////////// 
 footer {
-  background-color: $secondaryDark;
+  background-color: $darkRed;
 }
 
 .footer-container {
@@ -10,6 +10,7 @@ footer {
   grid-template-areas: 
   'redirect redirect redirect'
   'logo contact copyright';
+  place-items: center;
 
   .item1 {
     grid-area: redirect;
