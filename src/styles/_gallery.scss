@@ -2,17 +2,8 @@
 
  .gallery-container {
     margin: 0 auto;
-    
     grid: auto-flow dense / repeat(3, 1fr);
     gap:  0.5rem;
-    figure {
-      margin: 0;
-    }
-    .gallery-item {
-      max-height: 300px;
-      overflow: hidden;
-      
-    }
    }
   
   .gallery-container img {

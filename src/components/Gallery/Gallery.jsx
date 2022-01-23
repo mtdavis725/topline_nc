@@ -4,9 +4,8 @@ import PageTitle from '../PageTitle';
 
 
 let galleryImages = images.gallery.map((item, index) => {
-    return <figure className="gallery-item">
-            <img src={images.gallery[index]} alt={item}  />
-        </figure>
+    return <img src={images.gallery[index]} alt={item}  />
+       
     })
 
 function Gallery() {
