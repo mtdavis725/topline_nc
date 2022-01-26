@@ -8,8 +8,8 @@ import img7 from './images/gallery/gallery-ali-kisses.jpg'
 import img8 from './images/gallery/gallery-laura-kids-indoor.jpg'
 import img9 from './images/gallery/gallery-Laura-riding.jpg'
 import img10 from './images/gallery/gallery-Laura-with-kids-ribbons.jpg'
-import img12 from './images/gallery/gallery-peekaboo.jpg'
-import img13 from './images/gallery/gallery-sammi-cotton.jpg'
+import img11 from './images/gallery/gallery-peekaboo.jpg'
+import img12 from './images/gallery/gallery-sammi-cotton.jpg'
 
 
 import aboutCard from './images/cards/laura-index-square.jpg'
@@ -31,7 +31,7 @@ import about3 from './images/about/about-gle.jpg'
 
 
 const images = {
-    gallery: [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img12, img13 ],
+    gallery: [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12 ],
     cards: [aboutCard, lessonsCard, boardingCard, standardLesson, trainingProgram],
     about: [about1, about2, about3],
     carousel: [carousel1, carousel2, carousel3, carousel4],
