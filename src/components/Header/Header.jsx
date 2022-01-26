@@ -19,8 +19,7 @@ function Header() {
     const logo = images.logo;
 
     return (
-        <header className="hero-image">
-            <div className="container-xl"> 
+        <header className="hero-image"> 
             <div className="grid-container hero-container">
 
 
@@ -79,7 +78,6 @@ function Header() {
                         </Navbar.Collapse> 
                     </Navbar>
                 </div>
-            </div>
             </div>
         </header>
     );

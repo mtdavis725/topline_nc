@@ -5,12 +5,11 @@ import { Link } from 'react-router-dom'
 
 function Boarding() {
     return(
-        <section>
-            <main>
+       <main>
 
             <PageTitle 
-                title="Green Level Equestrian - Apex, NC"
-                about="Come and joins us at Green Level Equestrian (GLE)! We are very excited to have use of the lovely facility. The main goal of the barn is to provide a kind, open, judgement-free zone for horses and riders to learn and relax while maintaining top quality horse care."
+                title="Green Level Equestrian"
+                about="Come and join us at Green Level Equestrian (GLE)! We are very excited to have use of the lovely facility. The main goal of the barn is to provide a kind, open, judgement-free zone for horses and riders to learn and relax while maintaining top quality horse care."
             ></PageTitle>
 
             <div className="grid-container boarding-container padding">
@@ -50,19 +49,19 @@ function Boarding() {
                 </div>
 
                 <div className="item2">   
-                    <h4>Facilty features:</h4>
+                    <h3>Facilty features:</h3>
                    
                     <p>Our barn has 16 well ventilated stalls each with a back window, metal stall front and automated fly spray dispenser. We also have two wash/grooming stalls including hot and cold water.</p>
 
-                    <h4>Riding options:</h4>
+                    <h3>Riding options:</h3>
                     
                     <p>GLE has both a covered arena and outdoor arena. Both arenas are lighted making riding convenient no matter the time of day. The outdoor arena carries a full set of jumps including a roll top, brush jump and coop!</p>
                 </div>
 
 
                 <div className="item3">
-                    <h4>What's included with board?</h4>
-                    <ul>
+                    <h3>What's included with board?</h3>
+                    <ul className="list">
                         <li>Stall equipped with:</li>
                         <ul className="pl-3">
                             <li>Two water buckets, a feed bucket</li>
@@ -85,9 +84,7 @@ function Boarding() {
                 
             </div>
             
-            </main>
-        </section>
-
+        </main>
     );
 }
 

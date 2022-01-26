@@ -5,8 +5,7 @@ import PageTitle from '../PageTitle';
 
 function Lessons() {
     return (
-        
-            <main>
+        <main>
             <PageTitle title="Training with Topline"></PageTitle>
                
 
@@ -94,7 +93,6 @@ function Lessons() {
                 </div>
 
             </main>
-        
     );
 }
 

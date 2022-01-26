@@ -2,8 +2,7 @@ import PageTitle from '../PageTitle';
 
 function Contact() {
     return(
-        
-            <main>
+        <main>
             <PageTitle title="Let's get in touch!"></PageTitle>
               
             <div className="grid-container contact-container padding">

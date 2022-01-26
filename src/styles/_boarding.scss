@@ -1,5 +1,4 @@
 .boarding-container {
-  
   grid-gap: 2rem 1.5rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -28,8 +27,14 @@
   .item3 {
     grid-area: content2;
     background-color: $secondaryDark;
-    padding: 2rem;
+    padding: 2rem 1rem;
     border-radius: 15px;
+    h3 {
+      text-align: center;
+    }
+    .list {
+      padding: .5rem 2rem;
+    }
   }
   .item4 {
     grid-area: actionItem;
@@ -63,7 +68,7 @@
 .carousel-caption {
   background-color: $darkRed;
   padding: .5rem;
-  bottom: -20px;
+  bottom: -25px;
   border-radius: 15px;
   h4 {
     margin: 0;
@@ -78,14 +83,27 @@
   'content1 content1'
   'content2 content2'
   'actionItem actionItem';
-    .item3 {
-      padding: 2rem 4rem;
-    }
+ 
+      
+    
     .item4 {
       grid-template-columns: auto;
       grid-gap: 1rem 2rem;
       text-align: center;
   
+    }
+
+    .item1 {
+      margin-bottom: 1rem;
+    }
+    .carousel-caption {
+      background-color: $darkRed;
+      padding: .5rem;
+      bottom: -35px;
+      border-radius: 15px;
+      h4 {
+        margin: 0;
+      }
     }
   }
 }

@@ -1,6 +1,5 @@
 ////////// HEADER //////////
-header {
-    
+header { 
     border-bottom: 4px double $white;
 }
 
@@ -31,8 +30,7 @@ header {
         grid-row: 2 / 3;
         padding: 0 .5rem;
         button {
-            align-self: stretch;
-            margin: .4rem;
+            padding: .5rem 1rem;
         }
     }
 }
@@ -63,7 +61,7 @@ a .social-link {
 }
   
 .nav-link {
-    font-size: clamp(16px, 1.5vw, 22px);
+    font-size: 1.2rem;
     font-weight: 500;
     font-family: "Roboto Slab";
     .active {
@@ -83,10 +81,13 @@ a .social-link {
 
 ////// Bootstrap sm width //////
 @media (max-width: 576px) { 
-    .hero-content{
-        padding: 2rem 0;
+    .hero-container{
         .item1 {
-            padding: 0 1rem;
+            padding: 1rem .5rem 0;
+        }
+        .item2 button {
+            margin: 0;
+            padding: .6rem 1rem;
         }
     }
 
@@ -99,9 +100,21 @@ a .social-link {
             display: none;
         }
     }
+
+    .nav-link {
+        font-size: 1.15rem;
+        color: $white !important;
+    }
+
     .navbar-toggler {
         margin-left: 0.5rem;
         color: $white !important;
+        
+    }
+
+    a .social-link {
+        font-size: 3.2rem;
+        margin: 0;
     }
 
     //Toggle social link OUTSIDE nav-toggler VISIBLE

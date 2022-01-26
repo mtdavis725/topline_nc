@@ -25,9 +25,8 @@
 
 
  ////////// Bootstrap small column break //////////
- @media (max-width: 440px) {
+ @media (max-width: 576px) {
   .gallery-container {
-    padding: .25rem;
     grid: auto-flow dense / 1fr 1fr;
    }
 } 
