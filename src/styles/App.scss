@@ -30,19 +30,19 @@ main {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: calc(42px + 1vw);
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: calc(28px + 1vw);
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: calc(20px + 1vw);
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: calc(16px + 1vw);
 }
 
 em{
