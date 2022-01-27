@@ -11,7 +11,6 @@ import Gallery from './components/Gallery/Gallery';
 import Contact from './components/Contact/Contact';
 
 import './styles/App.scss';
-//import './TEST.css';
 
 function App() {
   return (
